@@ -1,0 +1,1 @@
+let graphData={graphOptions:{attractionForce:1,linkLength:10,repulsionForce:150,centralForce:3,edgePruning:100,minNodeRadius:3,maxNodeRadius:7},isInitialized:!0,paths:["home/英文期刊投稿中的简写与状态解读.html","home/注意事项.html","home/homepage.html"],nodeCount:3,linkSources:[],linkTargets:[],labels:["英文期刊投稿中的简写与状态解读","注意事项","Homepage"],radii:[null,null,null],linkCount:0}
