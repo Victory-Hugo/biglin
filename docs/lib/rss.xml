@@ -1,4 +1,82 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[科研思路]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib\media\favicon.png</url><title>科研思路</title><link/></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Mon, 04 Nov 2024 13:55:26 GMT</lastBuildDate><atom:link href="lib\rss.xml" rel="self" type="application/rss+xml"/><pubDate>Mon, 04 Nov 2024 13:53:38 GMT</pubDate><ttl>60</ttl><dc:creator/><item><title><![CDATA[8-氧基脱氧鸟嘌呤（8-oxo-dG）]]></title><description><![CDATA[ 
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><parsererror xmlns="http://www.w3.org/1999/xhtml" style="display: block; white-space: pre; border: 2px solid #c77; padding: 0 1em 0 1em; margin: 1em; background-color: #fdd; color: black"><h3>This page contains the following errors:</h3><div style="font-family:monospace;font-size:12px">error on line 78 at column 332: Invalid bytes in character encoding
+</div><h3>Below is a rendering of the page up to the first error.</h3></parsererror><channel><title><![CDATA[科研思路]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib\media\favicon.png</url><title>科研思路</title><link/></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Mon, 04 Nov 2024 14:03:53 GMT</lastBuildDate><atom:link href="lib\rss.xml" rel="self" type="application/rss+xml"/><pubDate>Mon, 04 Nov 2024 14:03:49 GMT</pubDate><ttl>60</ttl><dc:creator/><item><title><![CDATA[1 .&nbsp;<a data-href="正态分布 (Normal Distribution)" href="正态分布 (Normal Distribution)" class="internal-link" target="_self" rel="noopener nofollow">正态分布 (Normal Distribution)</a>]]></title><description><![CDATA[ 
+ <br><br>正态分布在我们的生活中随处可见，我们身高的分布、体重的分布，甚至是考试成绩的分布都可能符合正态分布。它的形状就像一个钟形曲线，最高点在中间，两边逐渐低下，具有对称性。<br>
+<img alt="image.png" src="https://picturerealm.oss-cn-chengdu.aliyuncs.com/obsidian/20240517091725.png" referrerpolicy="no-referrer" style="width: 500px; max-width: 100%;"><br><br>伯努利分布又名两点分布或者0-1分布，是描述只有两种可能结果的随机试验的概率分布，比如抛硬币或投掷骰子。它将这两种结果分别表示为1和0，通常用 p 来表示事件的成功概率，而1-p 表示事件的失败概率。比如，你在玩一个抛硬币的游戏。硬币只有两面：正面和反面。当你抛硬币时，只有两种可能的结果：硬币出现正面或反面。伯努利分布就像是描述硬币落地后是正面还是反面的概率分布。在伯努利分布中，我们关心的是事件的成功概率，即出现期望结果的概率。比如，在抛硬币时，成功的概率就是硬币出现正面的概率。<br>伯努利分布的变异程度通常由成功和失败的概率决定。如果硬币是公平的，那么成功和失败的概率都是相等的，变异程度就较小。假设你在玩一个猜硬币正反面的游戏，如果你猜对了，你就赢得奖品。这种情况下，游戏的结果可以用伯努利分布来描述。<br>
+<img alt="image.png" src="https://picturerealm.oss-cn-chengdu.aliyuncs.com/obsidian/20240517091815.png" referrerpolicy="no-referrer" style="width: 500px; max-width: 100%;"><br><br>泊松分布常常用于描述单位时间或空间内事件发生的次数，比如在一小时内接到的电话数量、一天内发生的交通事故数量等。<br>它的形状看起来有点像钟形曲线，但是更加扁平。在图的中心，事件发生的次数最多，然后随着次数的增加，概率逐渐减小。<br>平均值告诉我们在单位时间或空间内预期事件的平均发生次数。<br>
+泊松分布的特点之一是，它的方差等于其平均值。这意味着，如果事件在某段时间内平均发生了5次，那么方差也是5，表明事件发生次数的变化程度与平均值相近。如果我们想知道某一条街道一天内发生的车祸数量的概率分布，我们可以使用泊松分布来预测不同数量的车祸发生的可能性。<br>
+<img alt="image.png" src="https://picturerealm.oss-cn-chengdu.aliyuncs.com/obsidian/20240517092140.png" referrerpolicy="no-referrer" style="width: 500px; max-width: 100%;"><br><br>指数分布通常用于描述等待时间或事件之间的间隔时间，比如等待下一辆公交车到达的时间、两次地震之间的时间间隔等。<br>它的形状看起来有点像波峰逐渐减小的山脉。在开始时，概率较高，随着时间的推移，概率逐渐减小。<br>
+<img alt="image.png" src="https://picturerealm.oss-cn-chengdu.aliyuncs.com/obsidian/20240517092030.png" referrerpolicy="no-referrer" style="width: 500px; max-width: 100%;"><br>
+指数分布的一个重要特点是，它是无记忆的。这意味着，在任何给定的时间点上，等待下一个事件的时间不受过去等待时间的影响。<br>平均值告诉我们在一段时间内预期发生事件的平均次数。而指数分布的方差等于平均值的平方，这意味着方差与平均值之间存在很大的差异。<br>如果我们想知道一个人等待下一次公交车到达的时间，我们可以使用指数分布来预测不同等待时间的概率分布。<br><br>伽玛分布通常用于描述连续随机变量的正数值，比如处理时间、等待时间或事件发生的时间间隔等。<br>它的形状可以是多样的，取决于伽玛分布的参数。但通常情况下，它呈现出右偏的形态，即尾部向右延伸。伽玛分布的平均值和方差都受到其参数的影响。当其中一个参数增大时，分布会更向右延伸，并且平均值和方差也会随之增大。<br>这个分布可以用于建模很多现实生活中的情况，比如处理时间、等待时间以及一些事件的发生间隔时间等。<br>如果我们想要预测一个机器的寿命，我们可以使用伽玛分布来描述机器的故障时间分布。<br>
+<img alt="image.png" src="https://picturerealm.oss-cn-chengdu.aliyuncs.com/obsidian/20240517092124.png" referrerpolicy="no-referrer" style="width: 500px; max-width: 100%;"><br><br>贝塔分布是一种连续概率分布，通常用于描述在一个有限区间内取值的随机变量，比如概率值或者比例。<br>它的形状可以是多样的，取决于贝塔分布的参数。但通常情况下，它呈现出 U 型或者反 U 型的形态。<br>
+<img alt="image.png" src="https://picturerealm.oss-cn-chengdu.aliyuncs.com/obsidian/20240517092207.png" referrerpolicy="no-referrer" style="width: 500px; max-width: 100%;"><br>
+贝塔分布的一个重要特点是，它可以用来描述一个随机变量的概率分布，并且在一些统计推断和贝叶斯分析中有重要的应用。<br>如果我们想要建立一个模型来描述一个产品的质量，我们可以使用贝塔分布来描述产品合格的比例。<br><br>均匀分布是一种简单的概率分布，它将所有可能的结果都分布在一个范围内，并且每个结果的概率都是相等的。<br>
+想想想想一下，把一个区间分成若干个等长的小区间，每个小区间内的概率都是相同的，这就是均匀分布。<br>
+它的形状就像是一个长方形，所有的小区间的高度都是一样的，表明每个结果出现的概率都是相等的。<br>
+均匀分布的参数是区间的上下界，它们决定了分布的范围。<br>
+如果我们想要模拟一个骰子的投掷结果，我们可以使用均匀分布，因为在一个公正的骰子中，每个面出现的概率都是相等的。<br>
+<img alt="image.png" src="https://picturerealm.oss-cn-chengdu.aliyuncs.com/obsidian/20240517092250.png" referrerpolicy="no-referrer" style="width: 500px; max-width: 100%;"><br><br>二项分布在我们的日常生活中也很常见，比如抛硬币的结果、投掷骰子的结果或者考试中答对题目的次数等。<br>二项分布描述了在一系列独立的伯努利试验中成功次数的分布。这些试验只有两种可能的结果，比如抛硬币可能是正面或反面。<br>这个分布的形状不像钟形曲线那样，它更像是一个条形图。在图的两端，成功次数较少，而在中间，成功次数最多。<br>
+平均值告诉我们在这些试验中预期成功的次数，而标准差则告诉我们成功次数的变化程度。<br>假设我们进行了10次抛硬币的试验，我们想知道有多少次是正面。二项分布可以告诉我们每种可能的正面次数的概率。<br>
+<img alt="image.png" src="https://picturerealm.oss-cn-chengdu.aliyuncs.com/obsidian/20240517092331.png" referrerpolicy="no-referrer" style="width: 500px; max-width: 100%;"><br><br>对数正态分布描述了一个随机变量的对数服从正态分布的情况。换句话说，如果一个随机变量的对数是正态分布的，那么该随机变量就服从对数正态分布。<br>它的形状看起来有点像正态分布，但是更加右偏。这是因为正态分布的对数在较大的值处增长得更快。<br>
+<img alt="image.png" src="https://picturerealm.oss-cn-chengdu.aliyuncs.com/obsidian/20240517092352.png" referrerpolicy="no-referrer" style="width: 500px; max-width: 100%;"><br>
+对数正态分布通常用于描述一些连续的正数值的分布，比如收入分布、财富分布等。<br>它的参数是正态分布的平均值和标准差，它们决定了对数正态分布的形状。<br>如果我们想要描述一个城市中居民的收入分布，我们可能会发现它符合对数正态分布。<br><br>负二项分布描述了在一系列独立的伯努利试验中，达到指定数量的成功之前的失败次数。<br>与几何分布不同，几何分布是在达到第一次成功时停止，而负二项分布则在达到指定数量的成功时停止。<br>它的形状类似于二项分布，但更为右偏。开始时概率较高，随着试验次数的增加，概率逐渐减小。<br>
+<img alt="image.png" src="https://picturerealm.oss-cn-chengdu.aliyuncs.com/obsidian/20240517092426.png" referrerpolicy="no-referrer" style="width: 500px; max-width: 100%;"><br>
+负二项分布的参数是成功的概率和达到指定数量的成功所需的试验次数。成功的概率越高，试验次数越少，分布越向左偏。<br>如果我们重复进行投掷硬币的试验，直到出现5次正面为止，负二项分布可以告诉我们达到5次正面所需的失败次数的概率分布情况。<br>数据科学家在日常工作中使用的一些基本概率分布包括以下 11 个：<br>
+<br>正态分布 (Normal Distribution)：在数据科学中应用广泛，特别是在统计推断和假设检验中。
+<br>泊松分布 (Poisson Distribution)：用于描述单位时间或空间内事件发生的次数的分布，如某个时间段内电话呼叫的数量。
+<br>指数分布 (Exponential Distribution)：描述等待时间或事件之间的间隔时间的分布，例如等待下一次地铁到达的时间。
+<br>伽玛分布 (Gamma Distribution)：在描述连续随机变量的正数值时非常有用，例如在描述等待时间或处理时间时。
+<br>贝塔分布 (Beta Distribution)：通常用于描述概率分布的先验知识，例如在贝叶斯推断中。
+<br>均匀分布 (Uniform Distribution)：用于描述所有可能结果等概率出现的情况，例如抛硬币、掷骰子等。
+<br>二项分布 (Binomial Distribution)：用于描述离散随机变量中成功次数的分布，例如抛硬币、投掷骰子等。
+<br>对数正态分布 (Log-Normal Distribution)：描述一个随机变量的对数服从正态分布的情况，例如财富分布或收入分布。
+<br>负二项分布 (Negative Binomial Distribution)：描述在一系列独立的伯努利试验中，达到指定数量的成功之前的失败次数。
+<br>威布尔分布 (Weibull Distribution)：常用于可靠性工程和寿命分析，描述随机事件的生存时间。<br>
+
+<br>这些分布覆盖了数据科学中许多常见的场景，从描述连续变量到描述离散变量，以及描述等待时间和间隔时间等各种情况。]]></description><link>术语\数据科学家-95-时间都在使用的-10-大基本分布.html</link><guid isPermaLink="false">术语/数据科学家 95% 时间都在使用的 10 大基本分布.md</guid><pubDate>Thu, 20 Jun 2024 12:25:33 GMT</pubDate><enclosure url="https://picturerealm.oss-cn-chengdu.aliyuncs.com/obsidian/20240517091725.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://picturerealm.oss-cn-chengdu.aliyuncs.com/obsidian/20240517091725.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[介绍]]></title><description><![CDATA[ 
+ <br><br>花园里有什么？  
+如你所见，这是我的笔记本。<br>
+我将所用的几乎所有的代码和软件的操作都存放在这里。<br>
+笔记不定期更新。
+<br>Important
+以下学科：马克思主义哲学、逻辑学、宗教学、伦理学、、经济统计学、财政学、税收学、法学、民法学、刑法学、行政法学、商法学、国际法学、教育学、学前教育学、小学教育学、特殊教育学、教育技术学、中国语言文学、外国语言文学、比较文学与世界文学、新闻传播学、中国史、世界史、史学理论及史学史、考古学、数学、物理学、化学、生物科学、地理科学、机械工程、电子科学与技术、计算机科学与技术、土木工程、化学工程与技术、环境科学与工程、植物保护学、林学、畜牧学、水产养殖学、基础医学、临床医学、口腔医学、公共卫生与预防医学、中药学、药学、军事学、美术学、设计学、戏剧与影视学、数字人文学科、计算机辅助工程、有限元分析、计算流体力学、生物电脑学、物理电脑学、化学电脑学……<br>
+几乎都没有。  
+<br>
+Σ(⊙▽⊙"a 你不会还在看吧？
+<br><br><img alt="image.png" src="https://picturerealm.oss-cn-chengdu.aliyuncs.com/obsidian/202411042202742.png" referrerpolicy="no-referrer" style="width: 500px; max-width: 100%;"><br>
+<img alt="image.png" src="https://picturerealm.oss-cn-chengdu.aliyuncs.com/obsidian/202411042202550.png" referrerpolicy="no-referrer" style="width: 500px; max-width: 100%;"><br><br><br>Cake is a lie.<br><br><img alt="image.png" src="https://picturerealm.oss-cn-chengdu.aliyuncs.com/obsidian/20240616211539.png" referrerpolicy="no-referrer" style="width: 500px; max-width: 100%;"><br><img alt="image.png" src="https://picturerealm.oss-cn-chengdu.aliyuncs.com/obsidian/20240616211548.png" referrerpolicy="no-referrer" style="width: 500px; max-width: 100%;"><br><img alt="image.png" src="https://picturerealm.oss-cn-chengdu.aliyuncs.com/obsidian/20240616211555.png" referrerpolicy="no-referrer" style="width: 500px; max-width: 100%;"><br><img alt="image.png" src="https://picturerealm.oss-cn-chengdu.aliyuncs.com/obsidian/20240616211605.png" referrerpolicy="no-referrer" style="width: 500px; max-width: 100%;">]]></description><link>home\homepage.html</link><guid isPermaLink="false">Home/Homepage.md</guid><pubDate>Mon, 04 Nov 2024 14:02:17 GMT</pubDate><enclosure url="https://picturerealm.oss-cn-chengdu.aliyuncs.com/obsidian/202411042202742.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://picturerealm.oss-cn-chengdu.aliyuncs.com/obsidian/202411042202742.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[尺寸]]></title><description><![CDATA[ 
+ <br>LATEX 支持点阵图形格式（位图） JPEG 和 PNG，也支持矢量格式 EPS 和PDF。<br><br>点阵图形的像素是一种相对尺寸，其实际尺寸等于像素除以分辨率(resolution)<br>
+，最常用的分辨率单位是像素/英寸(pixels per inch，PPI) 。<br>当图形分辨率和输出分辨率不一致时，就会有一个重新采样(resampling)的过程；从高分辨率到低分辨率叫下采样(downsampling) ，反之叫上采样(upsampling) 。重新采样的插值(interpolation) 算法有很多，其中常用的有最近像素(nearest neighbor) 、双线性(bilinear) 、双三次(bicubic) 、兰索斯(Lanczos) 等。前两种速度快，但是效果差；后两种效果好，但是速度慢。追求完美的雷人自然要选择Lanczos。<br>一般认为在屏幕上阅读需<br>
+要72 PPI，考虑到放大150 PPI 应该够了，而高质量打印需要300 PPI。<br><br>\usepackage{graphicx}
+\includegraphics{fig.png}
+% 图形缩放
+\includegraphics[width=60pt]{homer.pdf}
+\includegraphics[width=80pt]{homer.pdf}
+\includegraphics[width=80pt,height=100pt]{homer.pdf}
+% 建议使用绝对路径，加上后缀
+复制<br>插图通常需要占据大块空间，所以在文字处理软件中用户经常需要调整插图的位置。figure 环境可以自动完成这样的任务；这种自动调整位置的环境称作浮动环境(float) ，下一章里还会介绍表格浮动环境。<br>\begin{figure}[htbp] % htbp 选项用来指定插图的理想位置，这几个字母分别代表here, top, bottom, float page，一般不推荐单独使用h
+\centering % 居中
+\includegraphics{myphoto.jpg} % 插图
+\caption{有图有真相} % 设置插图标题
+\label{fig:myphoto}
+\end{figure}
+复制<br>当我们需要两幅图片并排摆放，并共享标题时，可以在 figure 环境中使用两个 \includegraphics 命令<br>\begin{figure}[htbp]
+\centering
+\includegraphics{left.pdf}
+\includegraphics{right.pdf}
+\caption{反清复明}
+\end{figure}
+复制<br><br>首先引入包：<br>\usepackage[dvipsnames]{xcolor}
+\usepackage[svgnames]{xcolor}
+\usepackage[x11names]{xcolor} 
+% 一般引入简单的即可
+\usepackage{xcolor} 
+复制<br>\textcolor{Red}{红}
+\textcolor{Green}{绿}
+\textcolor{Blue}{蓝}
+\textcolor[RGB]{255,0,0}{红}
+\textcolor[HTML]{00FF00}{绿} % 我比较喜欢这个
+\textcolor[rgb]{0,0,1}{蓝}
+复制<br><br>\colorbox 命令可以生成有彩色背景的盒子，它的语法和 \textcolor 类似。]]></description><link>latex\latex基本语法：插图.html</link><guid isPermaLink="false">Latex/Latex基本语法：插图.md</guid><pubDate>Wed, 25 Sep 2024 05:59:52 GMT</pubDate></item><item><title><![CDATA[运算符]]></title><description/></item><item><title><![CDATA[8-氧基脱氧鸟嘌呤（8-oxo-dG）]]></title><description><![CDATA[ 
  <br>8-氧基脱氧鸟嘌呤（8-oxo-dG）是 DNA 氧化损伤的一种产物。它是鸟嘌呤碱基在第8位碳原子上的氧化产物。8-oxo-dG 的形成可能是由于活性氧（ROS）攻击 DNA 造成的。<br>8-oxo-dG是目前研究最广泛的DNA氧化损伤产物之一。它已被证明与癌症、衰老和神经退行性疾病等多种疾病有关。<br>8-oxo-dG的水平可以通过多种方法进行测定，包括酶联免疫吸附测定（ELISA）、高效液相色谱（HPLC）和质谱分析。<br>8-oxo-dG水平的升高可能是氧化应激的标志。氧化应激是指ROS的产生超过了机体的抗氧化能力。氧化应激会导致细胞损伤和疾病。<br>可以通过多种方法来降低8-oxo-dG的水平，包括：<br>
 <br>抗氧化剂：抗氧化剂可以清除ROS，从而减少对DNA的损伤。
 <br>DNA修复酶：DNA修复酶可以修复DNA损伤，包括8-oxo-dG。
@@ -1425,40 +1503,7 @@ To&nbsp;commemorate&nbsp;the 40th&nbsp;anniversary&nbsp;of Sanger sequencing, in
  <br>又称黄米。与<a data-href="粟（millet）" href="术语\粟（millet）.html" class="internal-link" target="_self" rel="noopener nofollow">粟（millet）</a>相比，其更加耐寒，也更加容易被驯化。所以最初的古人驯化<a data-href="黍（Panicum miliaceum）" href="术语\黍（panicum-miliaceum）.html" class="internal-link" target="_self" rel="noopener nofollow">黍（Panicum miliaceum）</a>。<br>
 驯化时间大概距今10000年。<br>
 有趣的是，黍定义了长度单位——尺：100粒黍横排。]]></description><link>术语\黍（panicum-miliaceum）.html</link><guid isPermaLink="false">术语/黍（Panicum miliaceum）.md</guid><pubDate>Thu, 20 Jun 2024 12:26:05 GMT</pubDate></item><item><title><![CDATA[竖穴墓]]></title><description><![CDATA[ 
- <br>就是从地面直接向下挖出墓室，埋葬死者。]]></description><link>术语\竖穴墓.html</link><guid isPermaLink="false">术语/竖穴墓.md</guid><pubDate>Thu, 20 Jun 2024 12:20:18 GMT</pubDate></item><item><title><![CDATA[1 .&nbsp;<a data-href="正态分布 (Normal Distribution)" href="正态分布 (Normal Distribution)" class="internal-link" target="_self" rel="noopener nofollow">正态分布 (Normal Distribution)</a>]]></title><description><![CDATA[ 
- <br><br>正态分布在我们的生活中随处可见，我们身高的分布、体重的分布，甚至是考试成绩的分布都可能符合正态分布。它的形状就像一个钟形曲线，最高点在中间，两边逐渐低下，具有对称性。<br>
-<img alt="image.png" src="https://picturerealm.oss-cn-chengdu.aliyuncs.com/obsidian/20240517091725.png" referrerpolicy="no-referrer" style="width: 500px; max-width: 100%;"><br><br>伯努利分布又名两点分布或者0-1分布，是描述只有两种可能结果的随机试验的概率分布，比如抛硬币或投掷骰子。它将这两种结果分别表示为1和0，通常用 p 来表示事件的成功概率，而1-p 表示事件的失败概率。比如，你在玩一个抛硬币的游戏。硬币只有两面：正面和反面。当你抛硬币时，只有两种可能的结果：硬币出现正面或反面。伯努利分布就像是描述硬币落地后是正面还是反面的概率分布。在伯努利分布中，我们关心的是事件的成功概率，即出现期望结果的概率。比如，在抛硬币时，成功的概率就是硬币出现正面的概率。<br>伯努利分布的变异程度通常由成功和失败的概率决定。如果硬币是公平的，那么成功和失败的概率都是相等的，变异程度就较小。假设你在玩一个猜硬币正反面的游戏，如果你猜对了，你就赢得奖品。这种情况下，游戏的结果可以用伯努利分布来描述。<br>
-<img alt="image.png" src="https://picturerealm.oss-cn-chengdu.aliyuncs.com/obsidian/20240517091815.png" referrerpolicy="no-referrer" style="width: 500px; max-width: 100%;"><br><br>泊松分布常常用于描述单位时间或空间内事件发生的次数，比如在一小时内接到的电话数量、一天内发生的交通事故数量等。<br>它的形状看起来有点像钟形曲线，但是更加扁平。在图的中心，事件发生的次数最多，然后随着次数的增加，概率逐渐减小。<br>平均值告诉我们在单位时间或空间内预期事件的平均发生次数。<br>
-泊松分布的特点之一是，它的方差等于其平均值。这意味着，如果事件在某段时间内平均发生了5次，那么方差也是5，表明事件发生次数的变化程度与平均值相近。如果我们想知道某一条街道一天内发生的车祸数量的概率分布，我们可以使用泊松分布来预测不同数量的车祸发生的可能性。<br>
-<img alt="image.png" src="https://picturerealm.oss-cn-chengdu.aliyuncs.com/obsidian/20240517092140.png" referrerpolicy="no-referrer" style="width: 500px; max-width: 100%;"><br><br>指数分布通常用于描述等待时间或事件之间的间隔时间，比如等待下一辆公交车到达的时间、两次地震之间的时间间隔等。<br>它的形状看起来有点像波峰逐渐减小的山脉。在开始时，概率较高，随着时间的推移，概率逐渐减小。<br>
-<img alt="image.png" src="https://picturerealm.oss-cn-chengdu.aliyuncs.com/obsidian/20240517092030.png" referrerpolicy="no-referrer" style="width: 500px; max-width: 100%;"><br>
-指数分布的一个重要特点是，它是无记忆的。这意味着，在任何给定的时间点上，等待下一个事件的时间不受过去等待时间的影响。<br>平均值告诉我们在一段时间内预期发生事件的平均次数。而指数分布的方差等于平均值的平方，这意味着方差与平均值之间存在很大的差异。<br>如果我们想知道一个人等待下一次公交车到达的时间，我们可以使用指数分布来预测不同等待时间的概率分布。<br><br>伽玛分布通常用于描述连续随机变量的正数值，比如处理时间、等待时间或事件发生的时间间隔等。<br>它的形状可以是多样的，取决于伽玛分布的参数。但通常情况下，它呈现出右偏的形态，即尾部向右延伸。伽玛分布的平均值和方差都受到其参数的影响。当其中一个参数增大时，分布会更向右延伸，并且平均值和方差也会随之增大。<br>这个分布可以用于建模很多现实生活中的情况，比如处理时间、等待时间以及一些事件的发生间隔时间等。<br>如果我们想要预测一个机器的寿命，我们可以使用伽玛分布来描述机器的故障时间分布。<br>
-<img alt="image.png" src="https://picturerealm.oss-cn-chengdu.aliyuncs.com/obsidian/20240517092124.png" referrerpolicy="no-referrer" style="width: 500px; max-width: 100%;"><br><br>贝塔分布是一种连续概率分布，通常用于描述在一个有限区间内取值的随机变量，比如概率值或者比例。<br>它的形状可以是多样的，取决于贝塔分布的参数。但通常情况下，它呈现出 U 型或者反 U 型的形态。<br>
-<img alt="image.png" src="https://picturerealm.oss-cn-chengdu.aliyuncs.com/obsidian/20240517092207.png" referrerpolicy="no-referrer" style="width: 500px; max-width: 100%;"><br>
-贝塔分布的一个重要特点是，它可以用来描述一个随机变量的概率分布，并且在一些统计推断和贝叶斯分析中有重要的应用。<br>如果我们想要建立一个模型来描述一个产品的质量，我们可以使用贝塔分布来描述产品合格的比例。<br><br>均匀分布是一种简单的概率分布，它将所有可能的结果都分布在一个范围内，并且每个结果的概率都是相等的。<br>
-想想想想一下，把一个区间分成若干个等长的小区间，每个小区间内的概率都是相同的，这就是均匀分布。<br>
-它的形状就像是一个长方形，所有的小区间的高度都是一样的，表明每个结果出现的概率都是相等的。<br>
-均匀分布的参数是区间的上下界，它们决定了分布的范围。<br>
-如果我们想要模拟一个骰子的投掷结果，我们可以使用均匀分布，因为在一个公正的骰子中，每个面出现的概率都是相等的。<br>
-<img alt="image.png" src="https://picturerealm.oss-cn-chengdu.aliyuncs.com/obsidian/20240517092250.png" referrerpolicy="no-referrer" style="width: 500px; max-width: 100%;"><br><br>二项分布在我们的日常生活中也很常见，比如抛硬币的结果、投掷骰子的结果或者考试中答对题目的次数等。<br>二项分布描述了在一系列独立的伯努利试验中成功次数的分布。这些试验只有两种可能的结果，比如抛硬币可能是正面或反面。<br>这个分布的形状不像钟形曲线那样，它更像是一个条形图。在图的两端，成功次数较少，而在中间，成功次数最多。<br>
-平均值告诉我们在这些试验中预期成功的次数，而标准差则告诉我们成功次数的变化程度。<br>假设我们进行了10次抛硬币的试验，我们想知道有多少次是正面。二项分布可以告诉我们每种可能的正面次数的概率。<br>
-<img alt="image.png" src="https://picturerealm.oss-cn-chengdu.aliyuncs.com/obsidian/20240517092331.png" referrerpolicy="no-referrer" style="width: 500px; max-width: 100%;"><br><br>对数正态分布描述了一个随机变量的对数服从正态分布的情况。换句话说，如果一个随机变量的对数是正态分布的，那么该随机变量就服从对数正态分布。<br>它的形状看起来有点像正态分布，但是更加右偏。这是因为正态分布的对数在较大的值处增长得更快。<br>
-<img alt="image.png" src="https://picturerealm.oss-cn-chengdu.aliyuncs.com/obsidian/20240517092352.png" referrerpolicy="no-referrer" style="width: 500px; max-width: 100%;"><br>
-对数正态分布通常用于描述一些连续的正数值的分布，比如收入分布、财富分布等。<br>它的参数是正态分布的平均值和标准差，它们决定了对数正态分布的形状。<br>如果我们想要描述一个城市中居民的收入分布，我们可能会发现它符合对数正态分布。<br><br>负二项分布描述了在一系列独立的伯努利试验中，达到指定数量的成功之前的失败次数。<br>与几何分布不同，几何分布是在达到第一次成功时停止，而负二项分布则在达到指定数量的成功时停止。<br>它的形状类似于二项分布，但更为右偏。开始时概率较高，随着试验次数的增加，概率逐渐减小。<br>
-<img alt="image.png" src="https://picturerealm.oss-cn-chengdu.aliyuncs.com/obsidian/20240517092426.png" referrerpolicy="no-referrer" style="width: 500px; max-width: 100%;"><br>
-负二项分布的参数是成功的概率和达到指定数量的成功所需的试验次数。成功的概率越高，试验次数越少，分布越向左偏。<br>如果我们重复进行投掷硬币的试验，直到出现5次正面为止，负二项分布可以告诉我们达到5次正面所需的失败次数的概率分布情况。<br>数据科学家在日常工作中使用的一些基本概率分布包括以下 11 个：<br>
-<br>正态分布 (Normal Distribution)：在数据科学中应用广泛，特别是在统计推断和假设检验中。
-<br>泊松分布 (Poisson Distribution)：用于描述单位时间或空间内事件发生的次数的分布，如某个时间段内电话呼叫的数量。
-<br>指数分布 (Exponential Distribution)：描述等待时间或事件之间的间隔时间的分布，例如等待下一次地铁到达的时间。
-<br>伽玛分布 (Gamma Distribution)：在描述连续随机变量的正数值时非常有用，例如在描述等待时间或处理时间时。
-<br>贝塔分布 (Beta Distribution)：通常用于描述概率分布的先验知识，例如在贝叶斯推断中。
-<br>均匀分布 (Uniform Distribution)：用于描述所有可能结果等概率出现的情况，例如抛硬币、掷骰子等。
-<br>二项分布 (Binomial Distribution)：用于描述离散随机变量中成功次数的分布，例如抛硬币、投掷骰子等。
-<br>对数正态分布 (Log-Normal Distribution)：描述一个随机变量的对数服从正态分布的情况，例如财富分布或收入分布。
-<br>负二项分布 (Negative Binomial Distribution)：描述在一系列独立的伯努利试验中，达到指定数量的成功之前的失败次数。
-<br>威布尔分布 (Weibull Distribution)：常用于可靠性工程和寿命分析，描述随机事件的生存时间。<br>
-
-<br>这些分布覆盖了数据科学中许多常见的场景，从描述连续变量到描述离散变量，以及描述等待时间和间隔时间等各种情况。]]></description><link>术语\数据科学家-95-时间都在使用的-10-大基本分布.html</link><guid isPermaLink="false">术语/数据科学家 95% 时间都在使用的 10 大基本分布.md</guid><pubDate>Thu, 20 Jun 2024 12:25:33 GMT</pubDate><enclosure url="https://picturerealm.oss-cn-chengdu.aliyuncs.com/obsidian/20240517091725.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://picturerealm.oss-cn-chengdu.aliyuncs.com/obsidian/20240517091725.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[双重假说]]></title><description><![CDATA[ 
+ <br>就是从地面直接向下挖出墓室，埋葬死者。]]></description><link>术语\竖穴墓.html</link><guid isPermaLink="false">术语/竖穴墓.md</guid><pubDate>Thu, 20 Jun 2024 12:20:18 GMT</pubDate></item><item><title><![CDATA[双重假说]]></title><description><![CDATA[ 
  <br><a class="internal-link" data-href="藏族.md" href="术语\藏族.html" target="_self" rel="noopener nofollow">藏族</a>藏人的双重假说指的是关于藏族人适应高海拔环境的遗传演化有两种可能的来源。第一种是藏族人可能直接从古代高原人群继承了适应高海拔的基因变异；第二种是他们可能通过与其他古代人群的混合，例如与低地的汉族人群，获得了这些适应性特征。这个假说基于藏族人特有的生理特征和遗传标记的分析，旨在解释他们是如何适应高海拔环境的复杂生态系统的。<br>扩展：<a class="internal-link" data-href="文献及报道/报道/藏族人群在高原缺氧环境中保持高生殖力的遗传机制.md" href="文献及报道\报道\藏族人群在高原缺氧环境中保持高生殖力的遗传机制.html" target="_self" rel="noopener nofollow">藏族人群在高原缺氧环境中保持高生殖力的遗传机制</a>]]></description><link>术语\双重假说.html</link><guid isPermaLink="false">术语/双重假说.md</guid><pubDate>Thu, 20 Jun 2024 12:22:35 GMT</pubDate></item><item><title><![CDATA[顺式遗传调控作用(cis-acting genetic control)]]></title><description><![CDATA[ 
  <br>"顺式遗传调控作用"是指在同一染色体上的一个基因或一个基因区域对另一个基因的表达产生影响，而这两个基因处于相同的染色体上。这种调控方式是通过染色体的空间结构和相互作用来实现的，而不是通过转录因子或其他分子中介来实现的。<br>在上下游基因的顺序排列中，上游基因可能会对下游基因的表达产生影响。这种影响可以是积极的（增强下游基因的表达）或消极的（抑制下游基因的表达）。这种顺式遗传调控可以通过染色体的三维结构中的相互作用来实现，例如染色体环域的接触和调节。这种调控方式在基因调控网络中起着重要作用，有助于确保基因的适当表达和功能。]]></description><link>术语\顺式遗传调控作用(cis-acting-genetic-control).html</link><guid isPermaLink="false">术语/顺式遗传调控作用(cis-acting genetic control).md</guid><pubDate>Thu, 20 Jun 2024 12:23:41 GMT</pubDate></item><item><title><![CDATA[瞬时受体电位粘液脂蛋白（Transient Receptor Potential Mucolipin, TRPML）]]></title><description><![CDATA[ 
  <br>一类位于溶酶体和内涵体膜上的阳离子通道蛋白，属于瞬时受体电位（TRP）通道家族。TRPML通道在调节溶酶体内的钙离子释放、细胞内的膜交通、以及在溶酶体功能和细胞稳态维持中发挥重要作用。TRPML1是其中的一个亚型，尤其与溶酶体功能和线粒体间的通信有关。]]></description><link>术语\瞬时受体电位粘液脂蛋白（transient-receptor-potential-mucolipin,-trpml）.html</link><guid isPermaLink="false">术语/瞬时受体电位粘液脂蛋白（Transient Receptor Potential Mucolipin, TRPML）.md</guid><pubDate>Mon, 26 Aug 2024 02:10:45 GMT</pubDate></item><item><title><![CDATA[斯虎尔（Skhul）]]></title><description><![CDATA[ 
@@ -2690,17 +2735,7 @@ mtDNA Variation among Greenland Eskimos: The Edge of theBeringian Expansion
 <br>
 <br>尽管在这篇文献中提到的是 突变数，但在 <a data-href="ρ（rho）方法" href="术语\ρ（rho）方法.html" class="internal-link" target="_self" rel="noopener nofollow">ρ（rho）方法</a>文献中其实是亚群中的突变的平均数。<a href="about:blank#fnref-1-b027f9dca4b02431" class="footnote-backref footnote-link" target="_self" rel="noopener nofollow"><span></span>︎</a><img class="emoji" draggable="false" alt="↩" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/21a9.svg" height="18px" style="max-width: 100%;">
 <br>Mutation Rate Switch inside Eurasian Mitochondrial Haplogroups: Impact of  Selection and Consequences for Dating Settlement in Europe<a href="about:blank#fnref-2-b027f9dca4b02431" class="footnote-backref footnote-link" target="_self" rel="noopener nofollow"><span></span>︎</a><img class="emoji" draggable="false" alt="↩" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/21a9.svg" height="18px" style="max-width: 100%;">
-]]></description><link>术语\σ方法.html</link><guid isPermaLink="false">术语/σ方法.md</guid><pubDate>Tue, 08 Oct 2024 03:33:49 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f44d.svg" length="0" type="image/svg+xml"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f44d.svg"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Homepage]]></title><description><![CDATA[ 
- <br>花园里有什么？  <br>你不能从这里学到任何东西  
-除非你多次尝试。熟能生巧。
-<br>我把自己的笔记分享到这里
-包括但不限于 R 语言、生物信息学以及一些你可能不感兴趣的内容。
-<br>Important
-以下学科：马克思主义哲学、逻辑学、宗教学、伦理学、、经济统计学、财政学、税收学、法学、民法学、刑法学、行政法学、商法学、国际法学、教育学、学前教育学、小学教育学、特殊教育学、教育技术学、中国语言文学、外国语言文学、比较文学与世界文学、新闻传播学、中国史、世界史、史学理论及史学史、考古学、数学、物理学、化学、生物科学、地理科学、机械工程、电子科学与技术、计算机科学与技术、土木工程、化学工程与技术、环境科学与工程、、植物保护学、林学、畜牧学、水产养殖学、基础医学、临床医学、口腔医学、公共卫生与预防医学、中药学、药学、军事学、美术学、设计学、戏剧与影视学、数字人文学科、计算机辅助工程、有限元分析、计算流体力学、生物电脑学、物理电脑学、化学电脑学……<br>
-几乎都没有。  
-<br>
-Σ(⊙▽⊙"a 你不会还在看吧？
-<br><br>Cake is a lie.<br><img alt="image.png" src="https://picturerealm.oss-cn-chengdu.aliyuncs.com/obsidian/20240616211539.png" referrerpolicy="no-referrer" style="width: 500px; max-width: 100%;"><br><img alt="image.png" src="https://picturerealm.oss-cn-chengdu.aliyuncs.com/obsidian/20240616211548.png" referrerpolicy="no-referrer" style="width: 500px; max-width: 100%;"><br><img alt="image.png" src="https://picturerealm.oss-cn-chengdu.aliyuncs.com/obsidian/20240616211555.png" referrerpolicy="no-referrer" style="width: 500px; max-width: 100%;"><br><img alt="image.png" src="https://picturerealm.oss-cn-chengdu.aliyuncs.com/obsidian/20240616211605.png" referrerpolicy="no-referrer" style="width: 500px; max-width: 100%;">]]></description><link>home\homepage.html</link><guid isPermaLink="false">Home/Homepage.md</guid><pubDate>Mon, 04 Nov 2024 13:09:20 GMT</pubDate><enclosure url="https://picturerealm.oss-cn-chengdu.aliyuncs.com/obsidian/20240616211539.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://picturerealm.oss-cn-chengdu.aliyuncs.com/obsidian/20240616211539.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[脚注的使用]]></title><description><![CDATA[ 
+]]></description><link>术语\σ方法.html</link><guid isPermaLink="false">术语/σ方法.md</guid><pubDate>Tue, 08 Oct 2024 03:33:49 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f44d.svg" length="0" type="image/svg+xml"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f44d.svg"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[脚注的使用]]></title><description><![CDATA[ 
  <br>要创建脚注参考，请在方括号<a data-footref="1" href="about:blank#fn-1-b027f9dca4b02431" class="footnote-link" target="_self" rel="noopener nofollow">[1]</a>内添加插入符号和标识符。标识符可以是数字或单词，但不能包含空格或制表符。<br>
 标识符仅将脚注参考弱脚注本身相关联- 在输出中，脚注按顺序编号。<br>脚注代号 ：(脚注代号会直接显示在渲染界面)；<br>
 脚注代号可以随便命名，不过推荐使用数字序号；<br>
