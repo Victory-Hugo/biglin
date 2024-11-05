@@ -1,6 +1,6 @@
 {
   "vaultName": "科研思路",
-  "lastExport": 1730773078124,
+  "lastExport": 1730791495838,
   "pluginVersion": "1.8.01",
   "validBodyClasses": "publish css-settings-manager theme-dark show-inline-title show-ribbon trim-cols h1-l h2-l h3-l row-lines styled-scrollbars fast-animations",
   "useCustomHeadContent": false,
@@ -25,6 +25,8 @@
     "软件/其它生信软件/使用心得/序列比对（Align）软件评测.md",
     "软件/其它生信软件/使用心得/序列比对的思考.md",
     "软件/其它生信软件/使用心得/GATK：简易的mtDNA分析流程.md",
+    "软件/其它生信软件/A-J/Arlequin：在Linux中运行.md",
+    "软件/其它生信软件/A-J/Arlequin软件.md",
     "软件/其它生信软件/A-J/DAMBE：核苷酸替代饱和度检测.md",
     "软件/其它生信软件/A-J/dinumt.md",
     "软件/其它生信软件/A-J/DnaSP：基础使用说明.md",
@@ -814,181 +816,181 @@
       "dependencies": []
     },
     "lib/scripts/graph-wasm.wasm": {
-      "modifiedTime": 1730773078124,
+      "modifiedTime": 1730791495838,
       "sourceSize": 23377,
       "exportedPath": "lib/scripts/graph-wasm.wasm",
       "dependencies": []
     },
     "lib/fonts/94f2f163d4b698242fef.otf": {
-      "modifiedTime": 1730773078124,
+      "modifiedTime": 1730791495838,
       "sourceSize": 66800,
       "exportedPath": "lib/fonts/94f2f163d4b698242fef.otf",
       "dependencies": []
     },
     "lib/fonts/72505e6a122c6acd5471.woff2": {
-      "modifiedTime": 1730773078124,
+      "modifiedTime": 1730791495838,
       "sourceSize": 104232,
       "exportedPath": "lib/fonts/72505e6a122c6acd5471.woff2",
       "dependencies": []
     },
     "lib/fonts/2d5198822ab091ce4305.woff2": {
-      "modifiedTime": 1730773078124,
+      "modifiedTime": 1730791495838,
       "sourceSize": 104332,
       "exportedPath": "lib/fonts/2d5198822ab091ce4305.woff2",
       "dependencies": []
     },
     "lib/fonts/c8ba52b05a9ef10f4758.woff2": {
-      "modifiedTime": 1730773078124,
+      "modifiedTime": 1730791495838,
       "sourceSize": 98868,
       "exportedPath": "lib/fonts/c8ba52b05a9ef10f4758.woff2",
       "dependencies": []
     },
     "lib/fonts/cb10ffd7684cd9836a05.woff2": {
-      "modifiedTime": 1730773078124,
+      "modifiedTime": 1730791495838,
       "sourceSize": 106876,
       "exportedPath": "lib/fonts/cb10ffd7684cd9836a05.woff2",
       "dependencies": []
     },
     "lib/fonts/b5f0f109bc88052d4000.woff2": {
-      "modifiedTime": 1730773078124,
+      "modifiedTime": 1730791495838,
       "sourceSize": 105804,
       "exportedPath": "lib/fonts/b5f0f109bc88052d4000.woff2",
       "dependencies": []
     },
     "lib/fonts/cbe0ae49c52c920fd563.woff2": {
-      "modifiedTime": 1730773078124,
+      "modifiedTime": 1730791495838,
       "sourceSize": 106108,
       "exportedPath": "lib/fonts/cbe0ae49c52c920fd563.woff2",
       "dependencies": []
     },
     "lib/fonts/535a6cf662596b3bd6a6.woff2": {
-      "modifiedTime": 1730773078124,
+      "modifiedTime": 1730791495838,
       "sourceSize": 111708,
       "exportedPath": "lib/fonts/535a6cf662596b3bd6a6.woff2",
       "dependencies": []
     },
     "lib/fonts/70cc7ff27245e82ad414.ttf": {
-      "modifiedTime": 1730773078124,
+      "modifiedTime": 1730791495838,
       "sourceSize": 192740,
       "exportedPath": "lib/fonts/70cc7ff27245e82ad414.ttf",
       "dependencies": []
     },
     "lib/fonts/454577c22304619db035.ttf": {
-      "modifiedTime": 1730773078124,
+      "modifiedTime": 1730791495838,
       "sourceSize": 161376,
       "exportedPath": "lib/fonts/454577c22304619db035.ttf",
       "dependencies": []
     },
     "lib/fonts/52ac8f3034507f1d9e53.ttf": {
-      "modifiedTime": 1730773078124,
+      "modifiedTime": 1730791495838,
       "sourceSize": 191568,
       "exportedPath": "lib/fonts/52ac8f3034507f1d9e53.ttf",
       "dependencies": []
     },
     "lib/fonts/05b618077343fbbd92b7.ttf": {
-      "modifiedTime": 1730773078124,
+      "modifiedTime": 1730791495838,
       "sourceSize": 155288,
       "exportedPath": "lib/fonts/05b618077343fbbd92b7.ttf",
       "dependencies": []
     },
     "lib/fonts/4bb6ac751d1c5478ff3a.woff2": {
-      "modifiedTime": 1730773078124,
+      "modifiedTime": 1730791495838,
       "sourceSize": 7876,
       "exportedPath": "lib/fonts/4bb6ac751d1c5478ff3a.woff2",
       "dependencies": []
     },
     "lib/media/874d8b8e340f75575caa.svg": {
-      "modifiedTime": 1730773078124,
+      "modifiedTime": 1730791495838,
       "sourceSize": 317,
       "exportedPath": "lib/media/874d8b8e340f75575caa.svg",
       "dependencies": []
     },
     "lib/html/file-tree.html": {
-      "modifiedTime": 1730773078124,
-      "sourceSize": 545610,
+      "modifiedTime": 1730791495838,
+      "sourceSize": 547252,
       "exportedPath": "lib/html/file-tree.html",
       "dependencies": []
     },
     "lib/scripts/webpage.js": {
-      "modifiedTime": 1730773078124,
+      "modifiedTime": 1730791495838,
       "sourceSize": 47290,
       "exportedPath": "lib/scripts/webpage.js",
       "dependencies": []
     },
     "lib/scripts/graph-view.js": {
-      "modifiedTime": 1730773078124,
+      "modifiedTime": 1730791495838,
       "sourceSize": 15519,
       "exportedPath": "lib/scripts/graph-view.js",
       "dependencies": []
     },
     "lib/scripts/graph-wasm.js": {
-      "modifiedTime": 1730773078124,
+      "modifiedTime": 1730791495838,
       "sourceSize": 14021,
       "exportedPath": "lib/scripts/graph-wasm.js",
       "dependencies": []
     },
     "lib/scripts/graph-render-worker.js": {
-      "modifiedTime": 1730773078124,
+      "modifiedTime": 1730791495838,
       "sourceSize": 5179,
       "exportedPath": "lib/scripts/graph-render-worker.js",
       "dependencies": []
     },
     "lib/scripts/tinycolor.js": {
-      "modifiedTime": 1730773078124,
+      "modifiedTime": 1730791495838,
       "sourceSize": 29832,
       "exportedPath": "lib/scripts/tinycolor.js",
       "dependencies": []
     },
     "lib/scripts/pixi.js": {
-      "modifiedTime": 1730773078124,
+      "modifiedTime": 1730791495838,
       "sourceSize": 449509,
       "exportedPath": "lib/scripts/pixi.js",
       "dependencies": []
     },
     "lib/scripts/minisearch.js": {
-      "modifiedTime": 1730773078124,
+      "modifiedTime": 1730791495838,
       "sourceSize": 29422,
       "exportedPath": "lib/scripts/minisearch.js",
       "dependencies": []
     },
     "lib/media/favicon.png": {
-      "modifiedTime": 1730773078124,
+      "modifiedTime": 1730791495838,
       "sourceSize": 1105,
       "exportedPath": "lib/media/favicon.png",
       "dependencies": []
     },
     "lib/scripts/graph-data.js": {
-      "modifiedTime": 1730773078124,
-      "sourceSize": 50464,
+      "modifiedTime": 1730791495838,
+      "sourceSize": 50626,
       "exportedPath": "lib/scripts/graph-data.js",
       "dependencies": []
     },
     "lib/styles/obsidian.css": {
-      "modifiedTime": 1730773078124,
+      "modifiedTime": 1730791495838,
       "sourceSize": 131134,
       "exportedPath": "lib/styles/obsidian.css",
       "dependencies": []
     },
     "lib/styles/theme.css": {
-      "modifiedTime": 1730773078124,
+      "modifiedTime": 1730791495838,
       "sourceSize": 228400,
       "exportedPath": "lib/styles/theme.css",
       "dependencies": []
     },
     "lib/styles/global-variable-styles.css": {
-      "modifiedTime": 1730773078124,
+      "modifiedTime": 1730791495838,
       "sourceSize": 575,
       "exportedPath": "lib/styles/global-variable-styles.css",
       "dependencies": []
     },
     "lib/styles/supported-plugins.css": {
-      "modifiedTime": 1730773078124,
+      "modifiedTime": 1730791495838,
       "sourceSize": 503,
       "exportedPath": "lib/styles/supported-plugins.css",
       "dependencies": []
     },
     "lib/styles/main-styles.css": {
-      "modifiedTime": 1730773078124,
+      "modifiedTime": 1730791495838,
       "sourceSize": 23130,
       "exportedPath": "lib/styles/main-styles.css",
       "dependencies": []
@@ -1300,8 +1302,8 @@
       "dependencies": []
     },
     "软件/其它生信软件/T-Z/Trimal：自动修剪序列不可靠区域.md": {
-      "modifiedTime": 1730724333887,
-      "sourceSize": 6540,
+      "modifiedTime": 1730791495838,
+      "sourceSize": 6925,
       "exportedPath": "软件/其它生信软件/t-z/trimal：自动修剪序列不可靠区域.html",
       "dependencies": []
     },
@@ -4228,7 +4230,7 @@
       "dependencies": []
     },
     "术语/数据科学家 95 时间都在使用的 10 大基本分布.md": {
-      "modifiedTime": 1730773078124,
+      "modifiedTime": 1730791495838,
       "sourceSize": 10258,
       "exportedPath": "术语/数据科学家-95-时间都在使用的-10-大基本分布.html",
       "dependencies": []
@@ -5086,8 +5088,8 @@
       "dependencies": []
     },
     "术语/种群配对Fst值（Population pairwise Fst values）.md": {
-      "modifiedTime": 1730728418559,
-      "sourceSize": 6802,
+      "modifiedTime": 1730791495838,
+      "sourceSize": 6794,
       "exportedPath": "术语/种群配对fst值（population-pairwise-fst-values）.html",
       "dependencies": []
     },
@@ -5539,6 +5541,18 @@
       "modifiedTime": 1730729029661,
       "sourceSize": 4000,
       "exportedPath": "linux和bash脚本/linux最最最常用命令.html",
+      "dependencies": []
+    },
+    "软件/其它生信软件/A-J/Arlequin：在Linux中运行.md": {
+      "modifiedTime": 1730791495838,
+      "sourceSize": 3628,
+      "exportedPath": "软件/其它生信软件/a-j/arlequin：在linux中运行.html",
+      "dependencies": []
+    },
+    "软件/其它生信软件/A-J/Arlequin软件.md": {
+      "modifiedTime": 1730791495838,
+      "sourceSize": 304,
+      "exportedPath": "软件/其它生信软件/a-j/arlequin软件.html",
       "dependencies": []
     }
   }

@@ -1,4 +1,174 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[科研思路]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib\media\favicon.png</url><title>科研思路</title><link/></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Tue, 05 Nov 2024 02:17:59 GMT</lastBuildDate><atom:link href="lib\rss.xml" rel="self" type="application/rss+xml"/><pubDate>Tue, 05 Nov 2024 02:17:58 GMT</pubDate><ttl>60</ttl><dc:creator/><item><title><![CDATA[1 .&nbsp;<a data-href="正态分布 (Normal Distribution)" href="正态分布 (Normal Distribution)" class="internal-link" target="_self" rel="noopener nofollow">正态分布 (Normal Distribution)</a>]]></title><description><![CDATA[ 
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[科研思路]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib\media\favicon.png</url><title>科研思路</title><link/></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Tue, 05 Nov 2024 07:24:58 GMT</lastBuildDate><atom:link href="lib\rss.xml" rel="self" type="application/rss+xml"/><pubDate>Tue, 05 Nov 2024 07:24:55 GMT</pubDate><ttl>60</ttl><dc:creator/><item><title><![CDATA[准备文件]]></title><description><![CDATA[ 
+ <br><a data-href="Arlequin软件" href="软件\其它生信软件\a-j\arlequin软件.html" class="internal-link" target="_self" rel="noopener nofollow">Arlequin软件</a> 可以完成许多群体遗传方面的计算，但是有时候，在大规模的数据计算中，该程序的 win 版本可能无法发挥足够的性能。一个办法是使用它的 Linux 版本。<br>本文将介绍如何在 Linux 版本下使用该软件。<br><br>
+<br>首先下载该软件的 Linux 版本：<a data-tooltip-position="top" aria-label="https://vip.123pan.cn/1835545223/%E6%96%87%E6%A1%A3%EF%BC%88%E5%85%B1%E4%BA%AB%EF%BC%89/arlecore_linux.zip" rel="noopener nofollow" class="external-link" href="https://vip.123pan.cn/1835545223/%E6%96%87%E6%A1%A3%EF%BC%88%E5%85%B1%E4%BA%AB%EF%BC%89/arlecore_linux.zip" target="_blank">点击此处下载备份</a>
+<br>然后下载该软件的 win 版本：<a data-tooltip-position="top" aria-label="https://vip.123pan.cn/1835545223/%E6%96%87%E6%A1%A3%EF%BC%88%E5%85%B1%E4%BA%AB%EF%BC%89/WinArl35.zip" rel="noopener nofollow" class="external-link" href="https://vip.123pan.cn/1835545223/%E6%96%87%E6%A1%A3%EF%BC%88%E5%85%B1%E4%BA%AB%EF%BC%89/WinArl35.zip" target="_blank">点击此处下载备份</a>
+<br>准备好 arp 文件，我们可以将 FASTA 转为 arp 文件：<a data-href="python：将FASTA转换成Arp" href="软件\python\数据科学与格式转换\python：将fasta转换成arp.html" class="internal-link" target="_self" rel="noopener nofollow">python：将FASTA转换成Arp</a>、<a data-href="python：批量修改VCF文件至Arp格式" href="软件\python\数据科学与格式转换\python：批量修改vcf文件至arp格式.html" class="internal-link" target="_self" rel="noopener nofollow"><span class="iconize-icon-in-link" title="👎" aria-label="👎" data-icon="👎" aria-hidden="true" style="transform: translateY(0px);"></span>python：批量修改VCF文件至Arp格式</a><img class="emoji" draggable="false" alt="👎" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f44e.svg" height="18px" style="max-width: 100%;">。
+<br><br>打开 win 版本的软件：<br>
+<img alt="image.png" src="https://picturerealm.oss-cn-chengdu.aliyuncs.com/obsidian/202411051519239.png" referrerpolicy="no-referrer" style="width: 500px; max-width: 100%;"><br>进行需要的设置，可以参考 <a data-href="DnaSP：AMOVA及Fst分析软件操作" href="软件\其它生信软件\a-j\dnasp：amova及fst分析软件操作.html" class="internal-link" target="_self" rel="noopener nofollow">DnaSP：AMOVA及Fst分析软件操作</a>,然后选择存储设置为 ars 文件。<br>
+<img alt="image.png" src="https://picturerealm.oss-cn-chengdu.aliyuncs.com/obsidian/202411051520205.png" referrerpolicy="no-referrer" style="width: 500px; max-width: 100%;"><br>现在得到了2个文件：<br>
+<br>ars
+<br>arp
+<br>将这2个文件放到 Linux 版本中去，例如 /arlecore_linux/input。<br><br><br>#!/bin/bash
+
+# 脚本用途和使用说明
+echo "This script runs ARLECORE on a specified .arp file with a given .ars settings file."
+# 指定软件核心的路径
+arlecore="/mnt/e/Scientifc_software/arlecore_linux/arlecore3522_64bit"
+# 指定ars文件路径
+settingsFile="/mnt/e/Scientifc_software/arlecore_linux/mtDNAHV1.ars"
+# 指定arp文件路径
+file="/mnt/e/Scientifc_software/arlecore_linux/mtDNAHV1.arp"
+# 检查arlecore可执行文件是否存在
+if [ ! -f "$arlecore" ]; then
+    echo "Error: ARLECORE executable not found at $arlecore"
+    exit 1
+fi
+# 检查设置文件是否存在
+if [ ! -f "$settingsFile" ]; then
+    echo "Error: Settings file not found at $settingsFile"
+    exit 1
+fi
+# 检查项目文件是否存在
+if [ ! -f "$file" ]; then
+    echo "Error: Project file not found at $file"
+    exit 1
+fi
+# 执行分析
+echo "Processing file $file using settings from $settingsFile"
+$arlecore $file $settingsFile  # Optionally, add 'run_silent' to suppress output
+# 完成处理提示
+echo "Processing completed for $file"
+复制<br><br>#!/bin/bash
+
+# 定义ARLECORE可执行文件路径
+arlecore="/mnt/e/Scientifc_software/arlecore_linux/arlecore3522_64bit"
+# 指定输入文件所在的目录
+inputDir="/mnt/e/Scientifc_software/arlecore_linux/input"
+# 检查arlecore可执行文件是否存在
+if [ ! -f "$arlecore" ]; then
+    echo "Error: ARLECORE executable not found at $arlecore"
+    exit 1
+fi
+# 切换到输入文件目录
+cd "$inputDir" || exit
+# 遍历目录中的所有*.arp文件
+for file in *.arp
+do
+    # 构建每个项目文件对应的设置文件路径
+    settingsFile="${file%.*}.ars"
+    # 检查对应的设置文件是否存在
+    if [ ! -f "$settingsFile" ]; then
+        echo "Warning: Settings file not found for $file at $settingsFile"
+        continue  # 如果设置文件不存在，则跳过当前文件
+    fi
+    # 打印正在处理的文件
+    echo "Processing file $file with settings from $settingsFile"
+    # 调用arlecore，运行静默模式
+    "$arlecore" "$file" "$settingsFile" run_silent
+    # 提示用户处理完成
+    echo "Completed processing $file"
+done
+# 返回原始目录
+cd - || exit
+# 脚本运行完毕
+echo "Batch processing completed for all files in $inputDir"
+复制]]></description><link>软件\其它生信软件\a-j\arlequin：在linux中运行.html</link><guid isPermaLink="false">软件/其它生信软件/A-J/Arlequin：在Linux中运行.md</guid><pubDate>Tue, 05 Nov 2024 07:24:55 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f44e.svg" length="0" type="image/svg+xml"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f44e.svg"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Arlequin软件]]></title><description><![CDATA[ 
+ <br>是一种种群遗传学综合数据分析软件，提供 GUI 界面，以让一般用户也可以作生物群体间的多种测试及计算，例如：遗传分化系数（Fixation index，亦作 F-statistics，Fst）、遗传距离、哈代-温伯格平衡、连锁不平衡和成对差测试等。]]></description><link>软件\其它生信软件\a-j\arlequin软件.html</link><guid isPermaLink="false">软件/其它生信软件/A-J/Arlequin软件.md</guid><pubDate>Tue, 05 Nov 2024 07:13:41 GMT</pubDate></item><item><title><![CDATA[安装 trimal]]></title><description><![CDATA[ 
+ <br><br>trimal 可以从官方网站或者使用包管理工具（如 conda）安装：<br>conda install -c bioconda trimal
+复制<br><br>trimal 的基本命令结构如下：<br>trimal -in inputfile -out outputfile [options]
+复制<br>其中 inputfile 是输入文件，outputfile 是输出文件，[options] 是你可以添加的其他选项。<br><br>
+<br>-automated1：自动选择过滤的参数，通常能够达到不错的平衡。
+<br>-gt：设定一个阈值，过滤掉那些在序列中缺失数据百分比高于该阈值的列。例如，-gt 0.9 会保留至少有90%有效数据的列。
+<br>-st：与 -gt 类似，但适用于非缺失的序列。
+<br>-cons：生成一个基于整体保守性的修剪版本。
+<br>-resoverlap 和 -seqoverlap：设定最小重叠的百分比，用于保留或剔除某些序列或位置。
+<br><br>假设你有一个名为 example.fasta 的 FASTA 格式文件，并想删除那些至少有20%缺失数据的列，你可以运行：<br>trimal -in example.fasta -out trimmed.fasta -gt 0.8
+复制<br><br>-h                          打印此信息并显示一些示例。
+--version                   打印trimAl的版本。
+
+-in &lt;输入文件&gt;              输入多种格式的文件（clustal，fasta，NBRF/PIR，nexus，phylip3.2，phylip）。
+
+-compareset &lt;输入文件&gt;      输入包含要比较对齐的文件路径列表。
+-forceselect &lt;输入文件&gt;     在文件比较方法中强制选择给定的输入文件。
+
+-backtrans &lt;输入文件&gt;       使用编码序列文件对给定的AA对齐进行回译。
+-ignorestopcodon            忽略输入编码序列中的终止密码子。
+-splitbystopcodon           在首个出现终止密码子处分割输入的编码序列。
+
+-matrix &lt;输入文件&gt;          输入用户定义的相似性矩阵文件（默认为Blosum62）。
+--alternative_matrix &lt;名称&gt; 选择已加载的替代相似性矩阵。
+                            只提供“degenerated_nt_identity”。
+
+-out &lt;输出文件&gt;             输出与输入格式相同的对齐（默认标准输出）。(默认输入格式)
+-htmlout &lt;输出文件&gt;         以HTML文件形式获取trimAl工作的摘要。
+
+-keepheader                 保留原始序列头部，包括非字母数字字符。
+                            仅适用于输入FASTA格式文件。 （将来的版本将扩展此功能）
+
+-nbrf                       输出NBRF/PIR格式的文件。
+-mega                       输出MEGA格式的文件。
+-nexus                      输出NEXUS格式的文件。
+-clustal                    输出CLUSTAL格式的文件。
+
+-fasta                      输出FASTA格式的文件。
+-fasta_m10                  输出FASTA格式的文件。序列名长度最多10个字符。
+
+-phylip                     输出PHYLIP/PHYLIP4格式的文件。
+-phylip_m10                 输出PHYLIP/PHYLIP4格式的文件。序列名长度最多10个字符。
+-phylip_paml                输出与PAML兼容的PHYLIP格式的文件。
+-phylip_paml_m10            输出与PAML兼容的PHYLIP格式的文件。序列名长度最多10个字符。
+-phylip3.2                  输出PHYLIP3.2格式的文件。
+-phylip3.2_m10              输出PHYLIP3.2格式的文件。序列名长度最多10个字符。
+
+-complementary              获取互补的对齐。
+-colnumbering               获取旧对齐和新对齐中列之间的关系。
+
+-selectcols { n,l,m-k }     选择要从对齐中移除的列。范围：[0 - (列数 - 1)]。（见用户指南）
+-selectseqs { n,l,m-k }     选择要从对齐中移除的序列。范围：[0 - (序列数 - 1)]。（见用户指南）
+
+-gt -gapthreshold &lt;n&gt;       允许的序列中存在间隙的最大比例为1 - (n)。范围：[0 - 1]
+-st -simthreshold &lt;n&gt;       允许的最小平均相似性。范围：[0 - 1]
+-ct -conthreshold &lt;n&gt;       允许的最小一致性值。范围：[0 - 1]
+-cons &lt;n&gt;                   保留原始对齐中位置的最小百分比。范围：[0 - 100]
+
+-nogaps                     移除对齐中所有带有间隙的位置。
+-noallgaps                  移除完全由间隙组成的列。
+-keepseqs                   即使序列完全由间隙组成也保留序列。
+
+-gappyout                   使用基于间隙分布信息的“gappyout”模式进行自动选择。（见用户指南）
+-strict                     使用“strict”模式进行自动选择。（见用户指南）
+-strictplus                 使用“strictplus”模式进行自动选择。（见用户指南）
+                           （针对邻接连接系统发育树重建进行优化）
+
+-automated1                 使用基于相似性统计的启发式选择自动方法。（见用户指南）（针对最大似然系统发育树重建进行优化）
+
+-terminalonly               只有内部边界（首尾无间隙的列）之外的列
+                            可以根据所选方法进行修剪
+--set_boundaries { l,r }    手动设置左（l）和右（r）边界 - 只有这些边界之外的列
+                            可以根据所选方法进行修剪。范围：[0 - (列数 - 1)]
+-block &lt;n&gt;                  在修剪对齐中保留的最小列块大小。与手动和自动（gappyout）方法一起使用
+
+-resoverlap                 一个位置与列中其他位置的最小重叠量，以被视为“好位置”。范围：[0 - 1]。（见用户指南）
+-seqoverlap                 序列必须具有的“好位置”的最小百分比，以便被保留。范围：[0 - 100]（见用户指南）
+
+-clusters &lt;n&gt;               从给定对齐中获取最具代表性的序列。范围：[1 - (序列数)]
+-maxidentity &lt;n&gt;            根据给定的身份阈值获取代表性序列。范围：[0 - 1]
+
+-w &lt;n&gt;                      （半）窗口大小，位置i的得分是从(i - n)到(i + n)的窗口平均值。
+-gw &lt;n&gt;                     （半）窗口大小仅适用于基于间隙的统计/方法。
+-sw &lt;n&gt;                     （半）窗口大小仅适用于基于相似性的统计/方法。
+-cw &lt;n&gt;                     （半）窗口大小仅适用于基于一致性的统计/方法。
+
+-sgc                        为输入对齐中的每列打印间隙分数。
+-sgt                        为输入对齐打印累计间隙分数。
+-ssc                        为输入对齐中的每列打印相似性分数。
+-sst                        为输入对齐打印累计相似性分数。
+-sfc                        为选定对齐中的每列打印成对总分数。
+-sft                        为选定对齐打印累计成对总分数。
+-sident                     为输入对齐中所有序列打印身份分数矩阵。（见用户指南）
+-soverlap                   为输入对齐中所有序列打印重叠分数矩阵。（见用户指南）
+
+复制]]></description><link>软件\其它生信软件\t-z\trimal：自动修剪序列不可靠区域.html</link><guid isPermaLink="false">软件/其它生信软件/T-Z/Trimal：自动修剪序列不可靠区域.md</guid><pubDate>Tue, 05 Nov 2024 03:14:14 GMT</pubDate></item><item><title><![CDATA[1 .&nbsp;<a data-href="正态分布 (Normal Distribution)" href="正态分布 (Normal Distribution)" class="internal-link" target="_self" rel="noopener nofollow">正态分布 (Normal Distribution)</a>]]></title><description><![CDATA[ 
  <br><br>正态分布在我们的生活中随处可见，我们身高的分布、体重的分布，甚至是考试成绩的分布都可能符合正态分布。它的形状就像一个钟形曲线，最高点在中间，两边逐渐低下，具有对称性。<br>
 <img alt="image.png" src="https://picturerealm.oss-cn-chengdu.aliyuncs.com/obsidian/20240517091725.png" referrerpolicy="no-referrer" style="width: 500px; max-width: 100%;"><br><br>伯努利分布又名两点分布或者0-1分布，是描述只有两种可能结果的随机试验的概率分布，比如抛硬币或投掷骰子。它将这两种结果分别表示为1和0，通常用 p 来表示事件的成功概率，而1-p 表示事件的失败概率。比如，你在玩一个抛硬币的游戏。硬币只有两面：正面和反面。当你抛硬币时，只有两种可能的结果：硬币出现正面或反面。伯努利分布就像是描述硬币落地后是正面还是反面的概率分布。在伯努利分布中，我们关心的是事件的成功概率，即出现期望结果的概率。比如，在抛硬币时，成功的概率就是硬币出现正面的概率。<br>伯努利分布的变异程度通常由成功和失败的概率决定。如果硬币是公平的，那么成功和失败的概率都是相等的，变异程度就较小。假设你在玩一个猜硬币正反面的游戏，如果你猜对了，你就赢得奖品。这种情况下，游戏的结果可以用伯努利分布来描述。<br>
 <img alt="image.png" src="https://picturerealm.oss-cn-chengdu.aliyuncs.com/obsidian/20240517091815.png" referrerpolicy="no-referrer" style="width: 500px; max-width: 100%;"><br><br>泊松分布常常用于描述单位时间或空间内事件发生的次数，比如在一小时内接到的电话数量、一天内发生的交通事故数量等。<br>它的形状看起来有点像钟形曲线，但是更加扁平。在图的中心，事件发生的次数最多，然后随着次数的增加，概率逐渐减小。<br>平均值告诉我们在单位时间或空间内预期事件的平均发生次数。<br>
@@ -31,7 +201,20 @@
 <br>负二项分布 (Negative Binomial Distribution)：描述在一系列独立的伯努利试验中，达到指定数量的成功之前的失败次数。
 <br>威布尔分布 (Weibull Distribution)：常用于可靠性工程和寿命分析，描述随机事件的生存时间。<br>
 
-<br>这些分布覆盖了数据科学中许多常见的场景，从描述连续变量到描述离散变量，以及描述等待时间和间隔时间等各种情况。]]></description><link>术语\数据科学家-95-时间都在使用的-10-大基本分布.html</link><guid isPermaLink="false">术语/数据科学家 95% 时间都在使用的 10 大基本分布.md</guid><pubDate>Thu, 20 Jun 2024 12:25:33 GMT</pubDate><enclosure url="https://picturerealm.oss-cn-chengdu.aliyuncs.com/obsidian/20240517091725.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://picturerealm.oss-cn-chengdu.aliyuncs.com/obsidian/20240517091725.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[介绍]]></title><description><![CDATA[ 
+<br>这些分布覆盖了数据科学中许多常见的场景，从描述连续变量到描述离散变量，以及描述等待时间和间隔时间等各种情况。]]></description><link>术语\数据科学家-95-时间都在使用的-10-大基本分布.html</link><guid isPermaLink="false">术语/数据科学家 95% 时间都在使用的 10 大基本分布.md</guid><pubDate>Thu, 20 Jun 2024 12:25:33 GMT</pubDate><enclosure url="https://picturerealm.oss-cn-chengdu.aliyuncs.com/obsidian/20240517091725.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://picturerealm.oss-cn-chengdu.aliyuncs.com/obsidian/20240517091725.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[种群配对Fst值（Population pairwise Fst values）]]></title><description><![CDATA[ 
+ <br>Fst（Fixation index）是一个衡量种群间遗传差异的指标。<br>
+它基于遗传变异的分布，通过比较种群内和种群间的遗传差异来度量种群结构。Fst值的范围从0到1，表示种群间遗传差异的程度。值接近0表示种群之间的遗传差异较小，可能存在较高的基因流和遗传交流。而值接近1表示种群之间的遗传差异较大，可能存在较低的基因流和遗传交流。<br>Population pairwise Fst values则是一种计算不同种群之间Fst值的方法。它通过对每对种群之间的遗传差异进行比较，计算出每对种群之间的Fst值。这种方法可以帮助确定不同种群之间的遗传结构差异程度，提供了评估种群间遗传流动和种群分化的信息。<br>计算population pairwise Fst values通常涉及使用遗传标记数据，如DNA序列或分子标记，例如单核苷酸多态性（SNP）或微卫星标记。这些数据用于计算不同种群间的遗传距离或遗传差异指标，从而获得Fst值。<br>Population pairwise Fst values的应用广泛，特别在种群遗传学、进化生物学、生态学和人类遗传学等领域。它可以用于研究种群分化、种群结构、种群历史和基因流等重要的生物学过程。<br>遗传距离（FST）热图是一种图形表示，用于展示不同人群之间的遗传差异程度，其基于FST（固定指数）值进行计算。FST是一种衡量人群遗传结构的指标，表示人群之间的遗传差异程度，它 quantifies 衡量了遗传变异中由人群间差异引起的比例，而非人群内部的变异。<br>热图使用颜色标尺来表示不同人群之间的FST值。通常情况下，较高的FST值会用较深的颜色（例如红色）表示，表示较高的遗传分化程度，而较低的FST值会用较浅的颜色（例如蓝色）表示，表示较低的遗传分化程度。热图可以帮助研究人员可视化人群之间的遗传相似性和差异性模式，有助于识别群集、人群亚组或基因流模式。<br>遗传距离热图在人群遗传学和进化研究中是一个有用的工具，它提供了遗传关系和人群结构的视觉表达方式，可以推断历史迁移模式、遗传混合和人群历史。<br>较低的FST值表示较低的遗传分化程度，意味着不同人群之间的遗传差异较小，亲缘关系较近。较低的FST值通常与更密切的遗传联系和更高的基因流程相关，表明不同人群之间有较频繁的基因交流和互相迁徙。因此，在遗传学中，较低的FST值常常被解释为人群之间的亲缘关系更为密切。相反，较高的FST值表示较高的遗传分化程度，意味着不同人群之间的遗传差异较大，亲缘关系较远。较高的FST值通常与较少的基因流程和较少的遗传交流相关，表明不同人群之间的遗传隔离和相对独立性。因此，遗传距离（FST）的值可以提供一种评估不同人群之间亲缘关系的度量方式。<br><br>我们使用了<a data-href="Arlequin软件" href="软件\其它生信软件\a-j\arlequin软件.html" class="internal-link" target="_self" rel="noopener nofollow">Arlequin软件</a> 来计算<a data-href="种群配对Fst值（Population pairwise Fst values）" href="术语\种群配对fst值（population-pairwise-fst-values）.html" class="internal-link" target="_self" rel="noopener nofollow">种群配对Fst值（Population pairwise Fst values）</a>。<br>前面文章写到群体遗传学主要致力于解决两个问题：1. 推断群体历史；2. 检测自然选择。今天这篇文章就来讲一下检测自然选择最基础也是最常用的一种方法：群体分化指数--Fst<br>
+简单介绍F-statistics 和 Fst<br>
+1. 概念<br>
+在群体遗传学中，F-statistics（Fixation indices）是衡量种群中基因型实际频率是否偏离遗传平衡（哈温平衡）理论比例的指标。F-statistics的概念由美国遗传学家Wright在文章中提出，当时他对牛的近亲繁殖很感兴趣，然而，由于完全显性优势导致显性纯合子和杂合子控制的表型相同，直到20世纪60年代以来分子遗传学的出现，遗传学家们才得以测量群体中的杂合度。<br>
+F-statistics也可以被认为是在分层群体（如生活在高原的高海拔人群和生活在平原的低海拔人群）中不同亚群间基因相关性的度量。这种相关性 (也可以理解为genetic distance) 会受到进化事件的影响，如遗传漂变，<a data-href="瓶颈效应（bottleneck）" href="术语\瓶颈效应（bottleneck）.html" class="internal-link" target="_self" rel="noopener nofollow">瓶颈效应（bottleneck）</a>，遗传搭载效应（有利突变附近位点由于连锁随着主效应位点一起频率升高并逐渐在群体中固定下来），突变，基因交流，近亲繁殖，自然选择等。这些进化事件导致的改变都会反映在等位基因频率和单倍型频率上，不过目前大多算法都是针对二等位基因设计，多等位基因的计算效果还有待进一步评估。<br>
+在这里我们先定义一些符号：<br>
+O(f(Aa))--实际观察杂合子频率，E(f(Aa))--期望杂合子频率，N表示数目。<br>
+在群体结构为两个层次的群体中：一个层次为个体（I）到亚群（S），另一个从亚群(S)到总群体（T）.<br>
+HI&nbsp;表示总群体所有个体实际观察到的杂合子频率平均值；  <br><img src="https://pic3.zhimg.com/80/v2-b6afaf6b7b9b1182ed0aa1bff2d4f0fa_720w.webp" referrerpolicy="no-referrer"><br>HS&nbsp;表示亚群在哈温平衡下杂合子期望频率:  <br><img src="https://pic3.zhimg.com/80/v2-45402248de991d3f3234974a92882746_720w.webp" referrerpolicy="no-referrer"><br>HT&nbsp;表示总群体在哈温平衡下杂合子期望频率；  <br><img src="https://pic1.zhimg.com/80/v2-448109c2f2390553d11568cc5fa9b514_720w.webp" referrerpolicy="no-referrer"><br>FIT&nbsp;表示个体(I)相对于总群体(T)的近交系数，即总群体的平均近交系数；  <br><img src="https://pic4.zhimg.com/80/v2-f82cfe921aaccc3464a060bcdb2853db_720w.webp" referrerpolicy="no-referrer"><br>FIS&nbsp;表示个体(I)相对于亚群(S)的近交系数，即亚群的平均近交系数；  <br><img src="https://pic3.zhimg.com/80/v2-e8376f1fd5f19bce24e3c5bfd7bd80b6_720w.webp" referrerpolicy="no-referrer"><br>FST&nbsp;表示亚群(S)相对于总群体(T)的近交系数，即有亲缘关系亚群间的平均近交系数。  <br><img src="https://pic3.zhimg.com/80/v2-db584f268423be3492f9ee3904548d4a_720w.webp" referrerpolicy="no-referrer"><br>FIT， FIS, FST之间的关系可以表示为 (1-FIS) = (1-FIS) (1-FST) .<br>
+在哈温平衡下，近交系数计算公式如下：  <br><img src="https://pic3.zhimg.com/80/v2-d608d24d884036e19a15645a207a3c16_720w.webp" referrerpolicy="no-referrer"><br>并且预期杂合频率为： E (f(Aa)) = 2pq<br>
+2. 举例<br>
+上面讲了这么多公式，下面通过一个例子来加深理解。  <br><img src="https://pic2.zhimg.com/80/v2-c33a040e1053ec95d1c2101a58726e21_720w.webp" referrerpolicy="no-referrer"><br>FST的取值范围为[0,1], 数值越大，表明等位基因在各自亚群中越固定（频率越高），群体间分化程度越大。]]></description><link>术语\种群配对fst值（population-pairwise-fst-values）.html</link><guid isPermaLink="false">术语/种群配对Fst值（Population pairwise Fst values）.md</guid><pubDate>Tue, 05 Nov 2024 07:13:53 GMT</pubDate><enclosure url="https://pic3.zhimg.com/80/v2-b6afaf6b7b9b1182ed0aa1bff2d4f0fa_720w.webp" length="0" type="image/webp"/><content:encoded>&lt;figure&gt;&lt;img src="https://pic3.zhimg.com/80/v2-b6afaf6b7b9b1182ed0aa1bff2d4f0fa_720w.webp"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[介绍]]></title><description><![CDATA[ 
  <br><br>花园里有什么？  
 如你所见，这是我的笔记本。<br>
 我将所用的几乎所有的代码和软件的操作都存放在这里。<br>
@@ -2402,20 +2585,7 @@ Method of the Year 2022: long-read sequencing
 <a href=".?query=tag:excalidraw" class="tag" target="_blank" rel="noopener nofollow">#excalidraw</a> <a data-href="PBS" href="PBS" class="internal-link" target="_self" rel="noopener nofollow">PBS</a>]]></description><link>术语\种群分支统计（population-branch-statistic，pbs）.html</link><guid isPermaLink="false">术语/种群分支统计（Population Branch statistic，PBS）.md</guid><pubDate>Thu, 20 Jun 2024 12:24:58 GMT</pubDate><enclosure url="https://picturerealm.oss-cn-chengdu.aliyuncs.com/obsidian/Pasted%20image%2020230801192845.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://picturerealm.oss-cn-chengdu.aliyuncs.com/obsidian/Pasted%20image%2020230801192845.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[种群结构分析（ADMIXTURE）]]></title><description><![CDATA[ 
  <br>ADMIXTURE是用于从多基因座SNP基因型数据集中对单个祖先进行最大似然估计的软件工具。它使用与STRUCTURE相同的统计模型，但是使用快速数值优化算法可以更快地计算估计值。<br>基本假设：<br>在各个亚群内部个体应该符合哈代-温伯格平衡（哈温平衡的概念），那么这个亚群内的基因频率分布应该可通过哈温平衡检验。<br>
 基因型位点不能是连锁的。同一个体基因组上的不同SNP可能来源不同亚群体，这是由于杂交混血过程带来的效应。为了达到哈-温平衡，对不同的位点的分类方法是不同的, 软件是对每个位点单独进行分群的<br>
-Structure分析，输入的数据就是样本的基因型数据一般来讲是snps，需要注意的是输入的必须是不存在连锁不平衡的独立位点。所以，使用所有的SNP是不对的。如果使用大量存在连锁不平衡的位点，就违背了这个软件最初的假设。需要根据连锁不平衡衰减分析的结果，仅从所有SNP中挑选一部分独立的位点用于structure分析。]]></description><link>术语\种群结构分析（admixture）.html</link><guid isPermaLink="false">术语/种群结构分析（ADMIXTURE）.md</guid><pubDate>Thu, 20 Jun 2024 12:24:59 GMT</pubDate></item><item><title><![CDATA[种群配对Fst值（Population pairwise Fst values）]]></title><description><![CDATA[ 
- <br>Fst（Fixation index）是一个衡量种群间遗传差异的指标。<br>
-它基于遗传变异的分布，通过比较种群内和种群间的遗传差异来度量种群结构。Fst值的范围从0到1，表示种群间遗传差异的程度。值接近0表示种群之间的遗传差异较小，可能存在较高的基因流和遗传交流。而值接近1表示种群之间的遗传差异较大，可能存在较低的基因流和遗传交流。<br>Population pairwise Fst values则是一种计算不同种群之间Fst值的方法。它通过对每对种群之间的遗传差异进行比较，计算出每对种群之间的Fst值。这种方法可以帮助确定不同种群之间的遗传结构差异程度，提供了评估种群间遗传流动和种群分化的信息。<br>计算population pairwise Fst values通常涉及使用遗传标记数据，如DNA序列或分子标记，例如单核苷酸多态性（SNP）或微卫星标记。这些数据用于计算不同种群间的遗传距离或遗传差异指标，从而获得Fst值。<br>Population pairwise Fst values的应用广泛，特别在种群遗传学、进化生物学、生态学和人类遗传学等领域。它可以用于研究种群分化、种群结构、种群历史和基因流等重要的生物学过程。<br>遗传距离（FST）热图是一种图形表示，用于展示不同人群之间的遗传差异程度，其基于FST（固定指数）值进行计算。FST是一种衡量人群遗传结构的指标，表示人群之间的遗传差异程度，它 quantifies 衡量了遗传变异中由人群间差异引起的比例，而非人群内部的变异。<br>热图使用颜色标尺来表示不同人群之间的FST值。通常情况下，较高的FST值会用较深的颜色（例如红色）表示，表示较高的遗传分化程度，而较低的FST值会用较浅的颜色（例如蓝色）表示，表示较低的遗传分化程度。热图可以帮助研究人员可视化人群之间的遗传相似性和差异性模式，有助于识别群集、人群亚组或基因流模式。<br>遗传距离热图在人群遗传学和进化研究中是一个有用的工具，它提供了遗传关系和人群结构的视觉表达方式，可以推断历史迁移模式、遗传混合和人群历史。<br>较低的FST值表示较低的遗传分化程度，意味着不同人群之间的遗传差异较小，亲缘关系较近。较低的FST值通常与更密切的遗传联系和更高的基因流程相关，表明不同人群之间有较频繁的基因交流和互相迁徙。因此，在遗传学中，较低的FST值常常被解释为人群之间的亲缘关系更为密切。相反，较高的FST值表示较高的遗传分化程度，意味着不同人群之间的遗传差异较大，亲缘关系较远。较高的FST值通常与较少的基因流程和较少的遗传交流相关，表明不同人群之间的遗传隔离和相对独立性。因此，遗传距离（FST）的值可以提供一种评估不同人群之间亲缘关系的度量方式。<br><br>我们使用了<a data-href="Arlequin 3.11 software" href="Arlequin 3.11 software" class="internal-link" target="_self" rel="noopener nofollow">Arlequin 3.11 software</a> 来计算<a data-href="种群配对Fst值（Population pairwise Fst values）" href="术语\种群配对fst值（population-pairwise-fst-values）.html" class="internal-link" target="_self" rel="noopener nofollow">种群配对Fst值（Population pairwise Fst values）</a>。<br>前面文章写到群体遗传学主要致力于解决两个问题：1. 推断群体历史；2. 检测自然选择。今天这篇文章就来讲一下检测自然选择最基础也是最常用的一种方法：群体分化指数--Fst<br>
-简单介绍F-statistics 和 Fst<br>
-1. 概念<br>
-在群体遗传学中，F-statistics（Fixation indices）是衡量种群中基因型实际频率是否偏离遗传平衡（哈温平衡）理论比例的指标。F-statistics的概念由美国遗传学家Wright在文章中提出，当时他对牛的近亲繁殖很感兴趣，然而，由于完全显性优势导致显性纯合子和杂合子控制的表型相同，直到20世纪60年代以来分子遗传学的出现，遗传学家们才得以测量群体中的杂合度。<br>
-F-statistics也可以被认为是在分层群体（如生活在高原的高海拔人群和生活在平原的低海拔人群）中不同亚群间基因相关性的度量。这种相关性 (也可以理解为genetic distance) 会受到进化事件的影响，如遗传漂变，<a data-href="瓶颈效应（bottleneck）" href="术语\瓶颈效应（bottleneck）.html" class="internal-link" target="_self" rel="noopener nofollow">瓶颈效应（bottleneck）</a>，遗传搭载效应（有利突变附近位点由于连锁随着主效应位点一起频率升高并逐渐在群体中固定下来），突变，基因交流，近亲繁殖，自然选择等。这些进化事件导致的改变都会反映在等位基因频率和单倍型频率上，不过目前大多算法都是针对二等位基因设计，多等位基因的计算效果还有待进一步评估。<br>
-在这里我们先定义一些符号：<br>
-O(f(Aa))--实际观察杂合子频率，E(f(Aa))--期望杂合子频率，N表示数目。<br>
-在群体结构为两个层次的群体中：一个层次为个体（I）到亚群（S），另一个从亚群(S)到总群体（T）.<br>
-HI&nbsp;表示总群体所有个体实际观察到的杂合子频率平均值；  <br><img src="https://pic3.zhimg.com/80/v2-b6afaf6b7b9b1182ed0aa1bff2d4f0fa_720w.webp" referrerpolicy="no-referrer"><br>HS&nbsp;表示亚群在哈温平衡下杂合子期望频率:  <br><img src="https://pic3.zhimg.com/80/v2-45402248de991d3f3234974a92882746_720w.webp" referrerpolicy="no-referrer"><br>HT&nbsp;表示总群体在哈温平衡下杂合子期望频率；  <br><img src="https://pic1.zhimg.com/80/v2-448109c2f2390553d11568cc5fa9b514_720w.webp" referrerpolicy="no-referrer"><br>FIT&nbsp;表示个体(I)相对于总群体(T)的近交系数，即总群体的平均近交系数；  <br><img src="https://pic4.zhimg.com/80/v2-f82cfe921aaccc3464a060bcdb2853db_720w.webp" referrerpolicy="no-referrer"><br>FIS&nbsp;表示个体(I)相对于亚群(S)的近交系数，即亚群的平均近交系数；  <br><img src="https://pic3.zhimg.com/80/v2-e8376f1fd5f19bce24e3c5bfd7bd80b6_720w.webp" referrerpolicy="no-referrer"><br>FST&nbsp;表示亚群(S)相对于总群体(T)的近交系数，即有亲缘关系亚群间的平均近交系数。  <br><img src="https://pic3.zhimg.com/80/v2-db584f268423be3492f9ee3904548d4a_720w.webp" referrerpolicy="no-referrer"><br>FIT， FIS, FST之间的关系可以表示为 (1-FIS) = (1-FIS) (1-FST) .<br>
-在哈温平衡下，近交系数计算公式如下：  <br><img src="https://pic3.zhimg.com/80/v2-d608d24d884036e19a15645a207a3c16_720w.webp" referrerpolicy="no-referrer"><br>并且预期杂合频率为： E (f(Aa)) = 2pq<br>
-2. 举例<br>
-上面讲了这么多公式，下面通过一个例子来加深理解。  <br><img src="https://pic2.zhimg.com/80/v2-c33a040e1053ec95d1c2101a58726e21_720w.webp" referrerpolicy="no-referrer"><br>FST的取值范围为[0,1], 数值越大，表明等位基因在各自亚群中越固定（频率越高），群体间分化程度越大。]]></description><link>术语\种群配对fst值（population-pairwise-fst-values）.html</link><guid isPermaLink="false">术语/种群配对Fst值（Population pairwise Fst values）.md</guid><pubDate>Thu, 20 Jun 2024 12:25:04 GMT</pubDate><enclosure url="https://pic3.zhimg.com/80/v2-b6afaf6b7b9b1182ed0aa1bff2d4f0fa_720w.webp" length="0" type="image/webp"/><content:encoded>&lt;figure&gt;&lt;img src="https://pic3.zhimg.com/80/v2-b6afaf6b7b9b1182ed0aa1bff2d4f0fa_720w.webp"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[烛台理论]]></title><description><![CDATA[ 
+Structure分析，输入的数据就是样本的基因型数据一般来讲是snps，需要注意的是输入的必须是不存在连锁不平衡的独立位点。所以，使用所有的SNP是不对的。如果使用大量存在连锁不平衡的位点，就违背了这个软件最初的假设。需要根据连锁不平衡衰减分析的结果，仅从所有SNP中挑选一部分独立的位点用于structure分析。]]></description><link>术语\种群结构分析（admixture）.html</link><guid isPermaLink="false">术语/种群结构分析（ADMIXTURE）.md</guid><pubDate>Thu, 20 Jun 2024 12:24:59 GMT</pubDate></item><item><title><![CDATA[烛台理论]]></title><description><![CDATA[ 
  <br>认为种族就像是烛台，共用一个底座，但很快就分支了，各自进化成现代人类。]]></description><link>术语\烛台理论.html</link><guid isPermaLink="false">术语/烛台理论.md</guid><pubDate>Thu, 20 Jun 2024 12:23:11 GMT</pubDate></item><item><title><![CDATA[主成分分析（Principal Component Analysis，PCA）]]></title><description><![CDATA[ 
  <br>视频教程：<a data-tooltip-position="top" aria-label="%5Bhttps://www.bilibili.com/video/BV1C7411A7bj/?spm_id_from=333.788.recommend_more_video.0&amp;vd_source=4410d713724fce7981d19f087cc50ee6" rel="noopener nofollow" class="external-link" href="[https:\\www.bilibili.com\video\BV1C7411A7bj?spm_id_from=333.788.recommend_more_video.0&amp;vd_source=4410d713724fce7981d19f087cc50ee6" target="_blank">点这里！！</a><br>主成分分析（Principal Component Analysis，PCA）， 是一种统计方法。通过正交变换将一组可能存在相关性的变量转换为一组线性不相关的变量，转换后的这组变量叫主成分。<br>在实际课题中，为了全面分析问题，往往提出很多与此有关的变量（或因素），因为每个变量都在不同程度上反映这个课题的某些信息。<br>主成分分析首先是由K.皮尔森（Karl Pearson）对非随机变量引入的，而后H.霍特林将此方法推广到随机向量的情形。信息的大小通常用离差平方和或方差来衡量。<br>在用统计分析方法研究多变量的课题时，变量个数太多就会增加课题的复杂性。人们自然希望变量个数较少而得到的信息较多。在很多情形，变量之间是有一定的相关关系的，当两个变量之间有一定相关关系时，可以解释为这两个变量反映此课题的信息有一定的重叠。主成分分析是对于原先提出的所有变量，将重复的变量（关系紧密的变量）删去多余，建立尽可能少的新变量，使得这些新变量是两两不相关的，而且这些新变量在反映课题的信息方面尽可能保持原有的信息。<br>设法将原来变量重新组合成一组新的互相无关的几个综合变量，同时根据实际需要从中可以取出几个较少的综合变量尽可能多地反映原来变量的信息的统计方法叫做主成分分析或称主分量分析，也是数学上用来降维的一种方法。<br><img alt="Pasted image 20230803111541" src="https://picturerealm.oss-cn-chengdu.aliyuncs.com/obsidian/202401291004565.png" referrerpolicy="no-referrer" style="width: 500px; max-width: 100%;"><br>
 <img alt="Pasted image 20230803111546" src="https://picturerealm.oss-cn-chengdu.aliyuncs.com/obsidian/202401291004566.png" referrerpolicy="no-referrer" style="width: 500px; max-width: 100%;"><br>
@@ -9548,77 +9718,7 @@ One Step McScanX（被包含在 TBtools 中），可以通过 fasta 文件和 gf
 <br>第七列是颜色。
 <br>你可以在下面添加各种各样的图形（例如热图、组装质量图等等）：<br>
 <img alt="image.png" src="https://picturerealm.oss-cn-chengdu.aliyuncs.com/obsidian/20240620094016.png" referrerpolicy="no-referrer" style="width: 500px; max-width: 100%;"><br><br><img alt="image.png" src="https://picturerealm.oss-cn-chengdu.aliyuncs.com/obsidian/20240620094113.png" referrerpolicy="no-referrer" style="width: 500px; max-width: 100%;"><br>
-\<br>这个软件似乎绘制出来的每个染色体的长度是按照碱基长度来的。不能把 mtDNA 给放大，其他染色体缩小吗？]]></description><link>软件\其它生信软件\t-z\tbtools：advanced-circos：绘制numt弦图教程.html</link><guid isPermaLink="false">软件/其它生信软件/T-Z/TBtools：Advanced Circos：绘制NUMT弦图教程.md</guid><pubDate>Fri, 21 Jun 2024 01:46:45 GMT</pubDate><enclosure url="https://picturerealm.oss-cn-chengdu.aliyuncs.com/obsidian/20240620091343.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://picturerealm.oss-cn-chengdu.aliyuncs.com/obsidian/20240620091343.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[安装 trimal]]></title><description><![CDATA[ 
- <br><br>trimal 可以从官方网站或者使用包管理工具（如 conda）安装：<br>conda install -c bioconda trimal
-复制<br><br>trimal 的基本命令结构如下：<br>trimal -in inputfile -out outputfile [options]
-复制<br>其中 inputfile 是输入文件，outputfile 是输出文件，[options] 是你可以添加的其他选项。<br><br>
-<br>-automated1：自动选择过滤的参数，通常能够达到不错的平衡。
-<br>-gt：设定一个阈值，过滤掉那些在序列中缺失数据百分比高于该阈值的列。例如，-gt 0.9 会保留至少有90%有效数据的列。
-<br>-st：与 -gt 类似，但适用于非缺失的序列。
-<br>-cons：生成一个基于整体保守性的修剪版本。
-<br>-resoverlap 和 -seqoverlap：设定最小重叠的百分比，用于保留或剔除某些序列或位置。
-<br><br>假设你有一个名为 example.fasta 的 FASTA 格式文件，并想删除那些至少有20%缺失数据的列，你可以运行：<br>trimal -in example.fasta -out trimmed.fasta -gt 0.8
-复制<br><br>
-<br>-h：打印此信息并显示一些示例。
-<br>--version：打印 trimAl 版本。
-<br>-in &lt;inputfile&gt;：输入文件，支持多种格式（clustal, fasta, NBRF/PIR, nexus, phylip3.2, phylip）。
-<br>-compareset &lt;inputfile&gt;：输入包含要比较的比对的文件路径的列表。
-<br>-forceselect &lt;inputfile&gt;：在文件比较方法中强制选择给定的输入文件。
-<br>-backtrans &lt;inputfile&gt;：使用编码序列文件对给定的氨基酸比对进行反向翻译。
-<br>-ignorestopcodon：在输入的编码序列中忽略停止密码子。
-<br>-splitbystopcodon：将输入的编码序列根据第一个出现的停止密码子进行分割。
-<br>-matrix &lt;inputfile&gt;：输入用户定义的相似性矩阵文件（默认为 Blosum62）。
-<br>--alternative_matrix &lt;name&gt;：选择一个已加载的替代相似性矩阵。目前仅提供 'degenerated_nt_identity'。
-<br>-out &lt;outputfile&gt;：输出比对，格式与输入文件相同（默认为标准输出）。
-<br>-htmlout &lt;outputfile&gt;：以 HTML 文件形式获取 trimal 工作的摘要。
-<br>-keepheader：保留原始序列头部，包括非字母数字字符。仅适用于输入的 FASTA 格式文件。
-<br>-nbrf：以 NBRF/PIR 格式输出文件。
-<br>-mega：以 MEGA 格式输出文件。
-<br>-nexus：以 NEXUS 格式输出文件。
-<br>-clustal：以 CLUSTAL 格式输出文件。
-<br>-fasta：以 FASTA 格式输出文件。
-<br>-fasta_m10：以 FASTA 格式输出文件，序列名称长度最多 10 个字符。
-<br>-phylip：以 PHYLIP/PHYLIP4 格式输出文件。
-<br>-phylip_m10：以 PHYLIP/PHYLIP4 格式输出文件，序列名称长度最多 10 个字符。
-<br>-phylip_paml：输出与 PAML 兼容的 PHYLIP 格式文件。
-<br>-phylip_paml_m10：输出与 PAML 兼容的 PHYLIP 格式文件，序列名称长度最多 10 个字符。
-<br>-phylip3.2：以 PHYLIP3.2 格式输出文件。
-<br>-phylip3.2_m10：以 PHYLIP3.2 格式输出文件，序列名称长度最多 10 个字符。
-<br>-complementary：获取互补比对。
-<br>-colnumbering：获取旧比对与新比对之间列的对应关系。
-<br>-selectcols { n,l,m-k }：选择要从比对中移除的列。范围：[0 - (列数 - 1)]。
-<br>-selectseqs { n,l,m-k }：选择要从比对中移除的序列。范围：[0 - (序列数 - 1)]。
-<br>-gt -gapthreshold &lt;n&gt;：允许具有缺口的序列的分数（1 - 允许的序列缺口比例）。范围：[0 - 1]
-<br>-st -simthreshold &lt;n&gt;：允许的最小平均相似性。范围：[0 - 1]
-<br>-ct -conthreshold &lt;n&gt;：允许的最小一致性值。范围：[0 - 1]
-<br>-cons &lt;n&gt;：在原始比对中要保留的位置的最小百分比。范围：[0 - 100]
-<br>-nogaps：删除比对中所有带有缺口的位置。
-<br>-noallgaps：删除仅由缺口组成的列。
-<br>-keepseqs：即使序列仅由缺口组成也保留序列。
-<br>-gappyout：使用基于缺口分布信息的“gappyout”模式的自动选择。（见用户指南）
-<br>-strict：使用“strict”模式的自动选择。（见用户指南）
-<br>-strictplus：使用“strictplus”模式的自动选择。（见用户指南）
-<br>-automated1：使用基于相似性统计的自动方法的启发式选择。（见用户指南）
-<br>-terminalonly：仅外部边界（没有缺口的第一列和最后一列）的列可以根据所选方法被修剪
-<br>--set_boundaries { l,r }：手动设置左（l）和右（r）边界 - 仅边界外的列可以根据所选方法被修剪。范围：[0 - (列数 - 1)]
-<br>-block &lt;n&gt;：在修剪的比对中保留的最小列块大小。可与手动和自动（gappyout）方法一起使用
-<br>-resoverlap：位置与列中其他位置的最小重叠，以被视为“好位置”。范围：[0 - 1]。
-<br>-seqoverlap：序列必须保留的“好位置”的最小百分比。范围：[0 - 100]。
-<br>-clusters &lt;n&gt;：从给定比对中获取最具代表性的 N 个序列。范围：[1 - (序列数)]
-<br>-maxidentity &lt;n&gt;：为给定身份阈值获取代表性序列。范围：[0 - 1].
-<br>-w &lt;n&gt;：（半）窗口大小，位置 i 的得分是窗口（i - n）到（i + n）的平均值。
-<br>-gw &lt;n&gt;：（半）窗口大小仅适用于基于缺口的统计/方法。
-<br>-sw &lt;n&gt;：（半）窗口大小仅适用于基于相似性的统计/方法。
-<br>-cw &lt;n&gt;：（半）窗口大小仅适用于基于一致性的统计/方法。
-<br>-sgc：为输入比对的每一列打印缺口得分。
-<br>-sgt：为输入比对打印累积缺口得分。
-<br>-ssc：为每一列打印相似性得分。
-<br>-sst：为输入比对打印累积相似性得分。
-<br>-sfc：为选定比对的每一列打印成对总和得分
-<br>-sft：为选定比对打印累积成对总和得分
-<br>-sident：为输入比对中所有序列打印身份得分矩阵。（见用户指南）
-<br>-soverlap：为输入比对中所有序列打印重叠得分矩阵。（见用户指南）
-<br>这些参数涵盖了从基本的文件输入输出格式选择到更复杂的比对修剪和统计评分方法。]]></description><link>软件\其它生信软件\t-z\trimal：自动修剪序列不可靠区域.html</link><guid isPermaLink="false">软件/其它生信软件/T-Z/Trimal：自动修剪序列不可靠区域.md</guid><pubDate>Sun, 28 Jul 2024 08:36:15 GMT</pubDate></item><item><title><![CDATA[利用代理使Onedrive下载速度起飞]]></title><description><![CDATA[ 
+\<br>这个软件似乎绘制出来的每个染色体的长度是按照碱基长度来的。不能把 mtDNA 给放大，其他染色体缩小吗？]]></description><link>软件\其它生信软件\t-z\tbtools：advanced-circos：绘制numt弦图教程.html</link><guid isPermaLink="false">软件/其它生信软件/T-Z/TBtools：Advanced Circos：绘制NUMT弦图教程.md</guid><pubDate>Fri, 21 Jun 2024 01:46:45 GMT</pubDate><enclosure url="https://picturerealm.oss-cn-chengdu.aliyuncs.com/obsidian/20240620091343.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://picturerealm.oss-cn-chengdu.aliyuncs.com/obsidian/20240620091343.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[利用代理使Onedrive下载速度起飞]]></title><description><![CDATA[ 
  <br>我发现下面两个网址似乎为 onedrive 的下载提供验证，直连能够提供很快的下载速度：<br>2024/07/13 15:57:52 127.0.0.1:50827 accepted //ecs.office.com:443 [http -&gt; direct]
 2024/07/13 15:57:56 127.0.0.1:50830 accepted //self.events.data.microsoft.com:443 [http -&gt; direct]
 复制<br>只需要在 v2rayn 软件的路由设置中添加 direct 规则：<br>ecs.office.com,
