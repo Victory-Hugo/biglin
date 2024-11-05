@@ -1,5 +1,4 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><parsererror xmlns="http://www.w3.org/1999/xhtml" style="display: block; white-space: pre; border: 2px solid #c77; padding: 0 1em 0 1em; margin: 1em; background-color: #fdd; color: black"><h3>This page contains the following errors:</h3><div style="font-family:monospace;font-size:12px">error on line 78 at column 332: Invalid bytes in character encoding
-</div><h3>Below is a rendering of the page up to the first error.</h3></parsererror><channel><title><![CDATA[科研思路]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib\media\favicon.png</url><title>科研思路</title><link/></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Mon, 04 Nov 2024 14:03:53 GMT</lastBuildDate><atom:link href="lib\rss.xml" rel="self" type="application/rss+xml"/><pubDate>Mon, 04 Nov 2024 14:03:49 GMT</pubDate><ttl>60</ttl><dc:creator/><item><title><![CDATA[1 .&nbsp;<a data-href="正态分布 (Normal Distribution)" href="正态分布 (Normal Distribution)" class="internal-link" target="_self" rel="noopener nofollow">正态分布 (Normal Distribution)</a>]]></title><description><![CDATA[ 
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[科研思路]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib\media\favicon.png</url><title>科研思路</title><link/></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Tue, 05 Nov 2024 02:17:59 GMT</lastBuildDate><atom:link href="lib\rss.xml" rel="self" type="application/rss+xml"/><pubDate>Tue, 05 Nov 2024 02:17:58 GMT</pubDate><ttl>60</ttl><dc:creator/><item><title><![CDATA[1 .&nbsp;<a data-href="正态分布 (Normal Distribution)" href="正态分布 (Normal Distribution)" class="internal-link" target="_self" rel="noopener nofollow">正态分布 (Normal Distribution)</a>]]></title><description><![CDATA[ 
  <br><br>正态分布在我们的生活中随处可见，我们身高的分布、体重的分布，甚至是考试成绩的分布都可能符合正态分布。它的形状就像一个钟形曲线，最高点在中间，两边逐渐低下，具有对称性。<br>
 <img alt="image.png" src="https://picturerealm.oss-cn-chengdu.aliyuncs.com/obsidian/20240517091725.png" referrerpolicy="no-referrer" style="width: 500px; max-width: 100%;"><br><br>伯努利分布又名两点分布或者0-1分布，是描述只有两种可能结果的随机试验的概率分布，比如抛硬币或投掷骰子。它将这两种结果分别表示为1和0，通常用 p 来表示事件的成功概率，而1-p 表示事件的失败概率。比如，你在玩一个抛硬币的游戏。硬币只有两面：正面和反面。当你抛硬币时，只有两种可能的结果：硬币出现正面或反面。伯努利分布就像是描述硬币落地后是正面还是反面的概率分布。在伯努利分布中，我们关心的是事件的成功概率，即出现期望结果的概率。比如，在抛硬币时，成功的概率就是硬币出现正面的概率。<br>伯努利分布的变异程度通常由成功和失败的概率决定。如果硬币是公平的，那么成功和失败的概率都是相等的，变异程度就较小。假设你在玩一个猜硬币正反面的游戏，如果你猜对了，你就赢得奖品。这种情况下，游戏的结果可以用伯努利分布来描述。<br>
 <img alt="image.png" src="https://picturerealm.oss-cn-chengdu.aliyuncs.com/obsidian/20240517091815.png" referrerpolicy="no-referrer" style="width: 500px; max-width: 100%;"><br><br>泊松分布常常用于描述单位时间或空间内事件发生的次数，比如在一小时内接到的电话数量、一天内发生的交通事故数量等。<br>它的形状看起来有点像钟形曲线，但是更加扁平。在图的中心，事件发生的次数最多，然后随着次数的增加，概率逐渐减小。<br>平均值告诉我们在单位时间或空间内预期事件的平均发生次数。<br>
@@ -21101,48 +21100,4 @@ Y染色体亚当距今6万年。在科伊桑人。<br>
 <br>地域性特征：我国现代大多数民族，一般来说都有自己祖祖辈辈长期生存生活的区域，而其族源一般都与自己区域内古代活动过的民族有一定的传承关系，因此一个民族的族源，往往带有很强的地域特征。例如满族，作为一个稳定的民族共同体，形成于16世纪末17世纪初，以白山黑水著称的东北地区是他们的发源地。其族源，一般来说，基本上来自在这一地区曾经活动过的各族，具体来说，他们的族源既直接来源于女真，也有契丹、娄、肃慎等东北各族的成分。再如蒙古族，形成于12世纪末13世纪初的蒙古高原，在成吉思汗统一蒙古高原各部时，就将操不同语言，有不同文化的各部统合到了蒙古部之中，形成了蒙古族。这些操不同语言，有不同文化传统、历史渊源的各部，实际上是蒙古高原上从匈奴以来的各古代民族的遗部，蒙古族完全可以说是历史上长期生活于蒙古高原上的北方各族的集大成者。在民族族源地域性特征方面还有一种情况，即古代的一些民族大迁徙到新地域之后，与当地民族融合，产生出一种新的民族。
 <br>主源性特征：虽然绝大多数民族在族源上表现为多源性特征，但同时每个民族的族源的成分，在形成该民族中也都有主次之分，即该民族的诸多族源中，明显表现出主源的痕迹。在古代民族中，如吐谷浑族，在其族源中虽有大量的羌族、氏族以及西南夷的成分，但其主源则明显是鲜卑族的成分，这主要表现在其文化的传承、语言的族属、族内结构、族源认同等方面，更多地反映出鲜卑族的特征。羌族成分的特征在吐谷浑族中虽也突出，但比起鲜卑族的特征来，显然并不占主要地位。其他现代民族如维吾尔族，其族源虽然在西域地区吸收了大量古代西域民族的成分，但是从其历史发展、体貌特征、习俗文化、文化传承等方面看，其族源的主要成分仍是回鹃。再如蒙古族，其族源成分中几乎吸纳了北方的古代各民族成分，但就其族源的最主要的成分，直接出于东胡的室韦，特别是蒙兀室韦。因此，每个民族的族源的主要成分，是可以认识的，这也是民族学研究的一项重要任务。
 <br>文化继承特征：在分析民族族源的成分时，有许多因素可以作为根据，其中如历史记载、口碑传说、经济文化类型、共同地域范围等，都可以提供定的根据，来确认一个民族的族源成分。而其中比较明显的一个重要因素就是文化，包括语言、习俗、口碑传说、宗教等。特别是语言因素，由于语言、文字在一个民族中影响最普遍，与一个民族的思维方式、感情传递、心理状态、相互交往都有最密切的关系，因此是最不易变动、最稳定的因素，从而也成为判断和剖析一个民族族源的重要根据。以上这些是我国少数民族（包括汉族在内），在民族族源、民族形成方面的一些特点。根据上述一些看法，我们认为我国各少数民族（除了朝鲜族和俄罗斯族外）在族源的关系上，可以用下面这个图表来作一个大体的表述。
-]]></description><link>书籍\中国少数民族通史.html</link><guid isPermaLink="false">书籍/中国少数民族通史.md</guid><pubDate>Wed, 26 Jun 2024 08:14:13 GMT</pubDate></item><item><title><![CDATA[英文期刊投稿中的简写与状态解读]]></title><description><![CDATA[ 
- <br><br>投稿后，进入审稿阶段，可以看到一些奇怪的缩写，现将其小结如下：  <br>Authors：作者，不用多说了。  <br>EIC： Editors in Chief，主编，权力最大，有稿件最终决定权。  <br>AE：Associate Editors，副编辑，（就是文章发表后在首页第一栏下方的contributing editor），对你的稿件来说，此人非常重要&nbsp;，他会在审稿人意见的基础上对文章作个综合评价后，给主编一个recommendation。一般主编都会按照AE的意见写最终的decision letter。  <br>ADM：Administrator，相当于编辑部的执行编辑（Managing Editor），你会发现编辑部给你的信大都是他写给你的。 他是编辑部里和你最接近的人，给你分配稿件号（Edit the manuscript ID number），修改各种投稿状态和日期（Edit the submission date）。  <br>Reviewers： 审稿人。（Article要求两个审稿人＋AE，总共三个人审。communication只有一个人审，这个人或者是编辑部指定的审稿人，或者是AE）<br>典型的审稿流程如下：author&nbsp;<a data-tooltip-position="top" aria-label="https://so.csdn.net/so/search?q=submit&amp;spm=1001.2101.3001.7020" rel="noopener nofollow" class="external-link" href="https://so.csdn.net/so/search?q=submit&amp;spm=1001.2101.3001.7020" target="_blank">submit</a>&nbsp;--》&nbsp;Admin Checks and Passes to EIC --》&nbsp;EIC Assigns to Associate Editor --》AE Invites and /or Assigns Reviewers --》Reviewers Score --》AE Makes Final Decision<br><br>
-<br>awaiting admin. procession&nbsp; 一般3－4天后就会安排主编。
-<br>awaiting reviewer assignment&nbsp;&nbsp;等待指定审稿人。 主编在选择审稿人，等待审稿人回复是否同意审稿。一般在一周以内。看审稿人回复速度。
-<br>awaiting reviewer scores&nbsp;&nbsp;等待审稿人审稿意见。一般会有一个审稿限期。但是审稿人觉得时间时间不够，可以写信给主编要求延长审稿期限。这个时间长短要取决于审稿人是否有空看你的文章，还要看他是否守时。
-<br>awaiting AE assignment&nbsp;等待AE的指派。编辑部在选择/联系AE。一般1－3天左右。
-<br>awaiting AE recommendation&nbsp;等待AE的推荐。 一般AE比较守时。但基本都是期限的最后一两天才给结果。
-<br>awaiting EIC decision&nbsp;－激动人心的时刻。 等待主编的决定。一般3－4天。
-<br>如果communication的话，就没有第4和第5步。
-<br><br>
-<br>&nbsp;Submitted to Journal&nbsp;当上传结束后，显示的状态是Submitted to Journal，这个状态是自然形成的无需处理。
-<br>With editor&nbsp;如果在投稿的时候没有要求选择编辑，就先到主编那里，主编会分派给别的编辑。这当中就会有另两个状态：&nbsp;① Editor assigned　编辑分； ② Editor Declined Invitation　编辑拒绝邀请，这时主编不得不将投稿文章重新分派给其它编辑。
-<br>Reviewer(s) invited&nbsp;说明编辑已接手处理，正在邀请审稿人中。有时该过程会持续很长时间，如果其中原因是编辑一直没有找到合适的审稿人，这时投稿者可以向编辑推荐审稿人。
-<br>Under&nbsp;review&nbsp;审稿人的意见已上传，说明审稿人已接受审稿，正在审稿中，这应该是一个漫长的等待（期刊通常会限定审稿人审稿时间，一般为一个月左右）。当然前面各步骤也可能很慢的，要看编辑的处理情况。如果被邀请审稿人不想审，就会decline，编辑会重新邀请别的审稿人。
-<br>required&nbsp;review&nbsp;completed&nbsp;审稿结束，等编辑处理，该过程短则几天，长则无期，科学堂 有一篇文章出现required&nbsp;review&nbsp;completed状态已近一个月了，还是没有消息。
-<br>Decision in Process&nbsp;到了这一步就快要有结果了，编辑开始考虑是给修改还是直接拒，当然也有可能直接接受的，但可能性很小，呵呵。
-<br>Minor revision/Major revision&nbsp;小修/大修，这个时候可以稍微庆祝一下了，因为有修改就有可能。具体怎么改就不多说了，谦虚谨慎是不可少的（因为修改后一般会再发给审稿人看，所以一定要 细心的回答每一个审稿人的每一个问题，态度要谦逊，要让审稿人觉得他提的每个问题都很有水准的，然后针对他的问题，一个一个的做出答复，能修改的就修改， 不能修改的给出理由，而且都要列出来，文章的哪一段哪一行修改了最好都说出来，记住：给审稿人减少麻烦就是给你自己减少麻烦！另注：&nbsp;有时，审稿人会在修改意见里隐讳里说出要你仔细阅读某几篇文献，这时可要注意了，其中某些文章可能就是评审者自己发表的，这时你最好在你的修改稿中加以引用），修改后被拒绝的例子也多不胜数的。
-<br>Revision Submitted to Journal&nbsp;修改后重新提交，等待编辑审理。
-<br>Accepted&nbsp;如果不要再审，只是小修改，编辑看后会马上显示这个状态，但如果要再审也会有上面的部分状态。一步会比较快，但也有慢的。看杂志的。
-<br>Rejected&nbsp;相信大家见了Rejected，都会很郁闷。但也不要太灰心，耐心将评审意见看完，一般评审者会给出有益的建议，相信看后你会有所收获。
-<br><br><br>
-<br>－Accept
-<br>&nbsp;-&nbsp;accept after minor revision( 小修后接收，withour re-review不需要再送审)
-<br>－reconsideration after major revision.(大修之后再送审，即要再经过审稿流程3－6)
-<br>－reject and resubmit&nbsp;(论文现在状态不能接受，但可以修改后重新再投。要重新经过审稿流程1－6)
-<br>－reject&nbsp;（没希望了，改投把)
-]]></description><link>home\英文期刊投稿中的简写与状态解读.html</link><guid isPermaLink="false">Home/英文期刊投稿中的简写与状态解读.md</guid><pubDate>Thu, 20 Jun 2024 13:46:14 GMT</pubDate></item><item><title><![CDATA[伦理填报]]></title><description><![CDATA[ 
- <br><br>
-<br><a data-tooltip-position="top" aria-label="http://ctmsec.cd120.com/" rel="noopener nofollow" class="external-link" href="http://ctmsec.cd120.com/" target="_blank">打开官网</a>
-<br>http://ctmsec.cd120.com/
-复制<br>
-<br>登陆账号：
-<br>账号：20229186
-密码：Hgl2wmg@1314
-复制<br>
-<br>点击右上角：<br>
-<img alt="image.png" src="https://picturerealm.oss-cn-chengdu.aliyuncs.com/obsidian/202401231018522.png" referrerpolicy="no-referrer" style="width: 500px; max-width: 100%;">
-<br>选择研究者发起的临床研究备案及伦理申报。<br>
-<img alt="image.png" src="https://picturerealm.oss-cn-chengdu.aliyuncs.com/obsidian/202401231018154.png" referrerpolicy="no-referrer" style="width: 500px; max-width: 100%;">
-<br>按照下图的模板进行填写，注意项目名称、研究例数、内容摘要填写自己的，人类遗传资源选择唾液。<br>
-<img alt="image.png" src="https://picturerealm.oss-cn-chengdu.aliyuncs.com/obsidian/202401231015320.png" referrerpolicy="no-referrer" style="width: 500px; max-width: 100%;">
-<br>填报之后下载附件，附件应该具备如下：<br>
-<img alt="image.png" src="https://picturerealm.oss-cn-chengdu.aliyuncs.com/obsidian/202401231021189.png" referrerpolicy="no-referrer" style="width: 500px; max-width: 100%;">
-<br>附件打印填写，然后扫描上传。
-<br><br>这是国家超算成都中心的链接，你们几个都去熟悉一下界面和操作。软件安装在固定位置/public/home/heguanglin/biosoftware，软连接到/public/home/heguanglin/biosoftware/bin。]]></description><link>home\注意事项.html</link><guid isPermaLink="false">Home/注意事项.md</guid><pubDate>Wed, 04 Sep 2024 08:53:33 GMT</pubDate><enclosure url="https://picturerealm.oss-cn-chengdu.aliyuncs.com/obsidian/202401231018522.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://picturerealm.oss-cn-chengdu.aliyuncs.com/obsidian/202401231018522.png"&gt;&lt;/figure&gt;</content:encoded></item></channel></rss>
+]]></description><link>书籍\中国少数民族通史.html</link><guid isPermaLink="false">书籍/中国少数民族通史.md</guid><pubDate>Wed, 26 Jun 2024 08:14:13 GMT</pubDate></item></channel></rss>
