@@ -1,4 +1,167 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[科研思路]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib\media\favicon.png</url><title>科研思路</title><link/></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Tue, 05 Nov 2024 07:24:58 GMT</lastBuildDate><atom:link href="lib\rss.xml" rel="self" type="application/rss+xml"/><pubDate>Tue, 05 Nov 2024 07:24:55 GMT</pubDate><ttl>60</ttl><dc:creator/><item><title><![CDATA[准备文件]]></title><description><![CDATA[ 
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[科研思路]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib\media\favicon.png</url><title>科研思路</title><link/></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Thu, 07 Nov 2024 03:40:15 GMT</lastBuildDate><atom:link href="lib\rss.xml" rel="self" type="application/rss+xml"/><pubDate>Thu, 07 Nov 2024 03:40:11 GMT</pubDate><ttl>60</ttl><dc:creator/><item><title><![CDATA[1 .&nbsp;<a data-href="正态分布 (Normal Distribution)" href="正态分布 (Normal Distribution)" class="internal-link" target="_self" rel="noopener nofollow">正态分布 (Normal Distribution)</a>]]></title><description><![CDATA[ 
+ <br><br>正态分布在我们的生活中随处可见，我们身高的分布、体重的分布，甚至是考试成绩的分布都可能符合正态分布。它的形状就像一个钟形曲线，最高点在中间，两边逐渐低下，具有对称性。<br>
+<img alt="image.png" src="https://picturerealm.oss-cn-chengdu.aliyuncs.com/obsidian/20240517091725.png" referrerpolicy="no-referrer" style="width: 500px; max-width: 100%;"><br><br>伯努利分布又名两点分布或者0-1分布，是描述只有两种可能结果的随机试验的概率分布，比如抛硬币或投掷骰子。它将这两种结果分别表示为1和0，通常用 p 来表示事件的成功概率，而1-p 表示事件的失败概率。比如，你在玩一个抛硬币的游戏。硬币只有两面：正面和反面。当你抛硬币时，只有两种可能的结果：硬币出现正面或反面。伯努利分布就像是描述硬币落地后是正面还是反面的概率分布。在伯努利分布中，我们关心的是事件的成功概率，即出现期望结果的概率。比如，在抛硬币时，成功的概率就是硬币出现正面的概率。<br>伯努利分布的变异程度通常由成功和失败的概率决定。如果硬币是公平的，那么成功和失败的概率都是相等的，变异程度就较小。假设你在玩一个猜硬币正反面的游戏，如果你猜对了，你就赢得奖品。这种情况下，游戏的结果可以用伯努利分布来描述。<br>
+<img alt="image.png" src="https://picturerealm.oss-cn-chengdu.aliyuncs.com/obsidian/20240517091815.png" referrerpolicy="no-referrer" style="width: 500px; max-width: 100%;"><br><br>泊松分布常常用于描述单位时间或空间内事件发生的次数，比如在一小时内接到的电话数量、一天内发生的交通事故数量等。<br>它的形状看起来有点像钟形曲线，但是更加扁平。在图的中心，事件发生的次数最多，然后随着次数的增加，概率逐渐减小。<br>平均值告诉我们在单位时间或空间内预期事件的平均发生次数。<br>
+泊松分布的特点之一是，它的方差等于其平均值。这意味着，如果事件在某段时间内平均发生了5次，那么方差也是5，表明事件发生次数的变化程度与平均值相近。如果我们想知道某一条街道一天内发生的车祸数量的概率分布，我们可以使用泊松分布来预测不同数量的车祸发生的可能性。<br>
+<img alt="image.png" src="https://picturerealm.oss-cn-chengdu.aliyuncs.com/obsidian/20240517092140.png" referrerpolicy="no-referrer" style="width: 500px; max-width: 100%;"><br><br>指数分布通常用于描述等待时间或事件之间的间隔时间，比如等待下一辆公交车到达的时间、两次地震之间的时间间隔等。<br>它的形状看起来有点像波峰逐渐减小的山脉。在开始时，概率较高，随着时间的推移，概率逐渐减小。<br>
+<img alt="image.png" src="https://picturerealm.oss-cn-chengdu.aliyuncs.com/obsidian/20240517092030.png" referrerpolicy="no-referrer" style="width: 500px; max-width: 100%;"><br>
+指数分布的一个重要特点是，它是无记忆的。这意味着，在任何给定的时间点上，等待下一个事件的时间不受过去等待时间的影响。<br>平均值告诉我们在一段时间内预期发生事件的平均次数。而指数分布的方差等于平均值的平方，这意味着方差与平均值之间存在很大的差异。<br>如果我们想知道一个人等待下一次公交车到达的时间，我们可以使用指数分布来预测不同等待时间的概率分布。<br><br>伽玛分布通常用于描述连续随机变量的正数值，比如处理时间、等待时间或事件发生的时间间隔等。<br>它的形状可以是多样的，取决于伽玛分布的参数。但通常情况下，它呈现出右偏的形态，即尾部向右延伸。伽玛分布的平均值和方差都受到其参数的影响。当其中一个参数增大时，分布会更向右延伸，并且平均值和方差也会随之增大。<br>这个分布可以用于建模很多现实生活中的情况，比如处理时间、等待时间以及一些事件的发生间隔时间等。<br>如果我们想要预测一个机器的寿命，我们可以使用伽玛分布来描述机器的故障时间分布。<br>
+<img alt="image.png" src="https://picturerealm.oss-cn-chengdu.aliyuncs.com/obsidian/20240517092124.png" referrerpolicy="no-referrer" style="width: 500px; max-width: 100%;"><br><br>贝塔分布是一种连续概率分布，通常用于描述在一个有限区间内取值的随机变量，比如概率值或者比例。<br>它的形状可以是多样的，取决于贝塔分布的参数。但通常情况下，它呈现出 U 型或者反 U 型的形态。<br>
+<img alt="image.png" src="https://picturerealm.oss-cn-chengdu.aliyuncs.com/obsidian/20240517092207.png" referrerpolicy="no-referrer" style="width: 500px; max-width: 100%;"><br>
+贝塔分布的一个重要特点是，它可以用来描述一个随机变量的概率分布，并且在一些统计推断和贝叶斯分析中有重要的应用。<br>如果我们想要建立一个模型来描述一个产品的质量，我们可以使用贝塔分布来描述产品合格的比例。<br><br>均匀分布是一种简单的概率分布，它将所有可能的结果都分布在一个范围内，并且每个结果的概率都是相等的。<br>
+想想想想一下，把一个区间分成若干个等长的小区间，每个小区间内的概率都是相同的，这就是均匀分布。<br>
+它的形状就像是一个长方形，所有的小区间的高度都是一样的，表明每个结果出现的概率都是相等的。<br>
+均匀分布的参数是区间的上下界，它们决定了分布的范围。<br>
+如果我们想要模拟一个骰子的投掷结果，我们可以使用均匀分布，因为在一个公正的骰子中，每个面出现的概率都是相等的。<br>
+<img alt="image.png" src="https://picturerealm.oss-cn-chengdu.aliyuncs.com/obsidian/20240517092250.png" referrerpolicy="no-referrer" style="width: 500px; max-width: 100%;"><br><br>二项分布在我们的日常生活中也很常见，比如抛硬币的结果、投掷骰子的结果或者考试中答对题目的次数等。<br>二项分布描述了在一系列独立的伯努利试验中成功次数的分布。这些试验只有两种可能的结果，比如抛硬币可能是正面或反面。<br>这个分布的形状不像钟形曲线那样，它更像是一个条形图。在图的两端，成功次数较少，而在中间，成功次数最多。<br>
+平均值告诉我们在这些试验中预期成功的次数，而标准差则告诉我们成功次数的变化程度。<br>假设我们进行了10次抛硬币的试验，我们想知道有多少次是正面。二项分布可以告诉我们每种可能的正面次数的概率。<br>
+<img alt="image.png" src="https://picturerealm.oss-cn-chengdu.aliyuncs.com/obsidian/20240517092331.png" referrerpolicy="no-referrer" style="width: 500px; max-width: 100%;"><br><br>对数正态分布描述了一个随机变量的对数服从正态分布的情况。换句话说，如果一个随机变量的对数是正态分布的，那么该随机变量就服从对数正态分布。<br>它的形状看起来有点像正态分布，但是更加右偏。这是因为正态分布的对数在较大的值处增长得更快。<br>
+<img alt="image.png" src="https://picturerealm.oss-cn-chengdu.aliyuncs.com/obsidian/20240517092352.png" referrerpolicy="no-referrer" style="width: 500px; max-width: 100%;"><br>
+对数正态分布通常用于描述一些连续的正数值的分布，比如收入分布、财富分布等。<br>它的参数是正态分布的平均值和标准差，它们决定了对数正态分布的形状。<br>如果我们想要描述一个城市中居民的收入分布，我们可能会发现它符合对数正态分布。<br><br>负二项分布描述了在一系列独立的伯努利试验中，达到指定数量的成功之前的失败次数。<br>与几何分布不同，几何分布是在达到第一次成功时停止，而负二项分布则在达到指定数量的成功时停止。<br>它的形状类似于二项分布，但更为右偏。开始时概率较高，随着试验次数的增加，概率逐渐减小。<br>
+<img alt="image.png" src="https://picturerealm.oss-cn-chengdu.aliyuncs.com/obsidian/20240517092426.png" referrerpolicy="no-referrer" style="width: 500px; max-width: 100%;"><br>
+负二项分布的参数是成功的概率和达到指定数量的成功所需的试验次数。成功的概率越高，试验次数越少，分布越向左偏。<br>如果我们重复进行投掷硬币的试验，直到出现5次正面为止，负二项分布可以告诉我们达到5次正面所需的失败次数的概率分布情况。<br>数据科学家在日常工作中使用的一些基本概率分布包括以下 11 个：<br>
+<br>正态分布 (Normal Distribution)：在数据科学中应用广泛，特别是在统计推断和假设检验中。
+<br>泊松分布 (Poisson Distribution)：用于描述单位时间或空间内事件发生的次数的分布，如某个时间段内电话呼叫的数量。
+<br>指数分布 (Exponential Distribution)：描述等待时间或事件之间的间隔时间的分布，例如等待下一次地铁到达的时间。
+<br>伽玛分布 (Gamma Distribution)：在描述连续随机变量的正数值时非常有用，例如在描述等待时间或处理时间时。
+<br>贝塔分布 (Beta Distribution)：通常用于描述概率分布的先验知识，例如在贝叶斯推断中。
+<br>均匀分布 (Uniform Distribution)：用于描述所有可能结果等概率出现的情况，例如抛硬币、掷骰子等。
+<br>二项分布 (Binomial Distribution)：用于描述离散随机变量中成功次数的分布，例如抛硬币、投掷骰子等。
+<br>对数正态分布 (Log-Normal Distribution)：描述一个随机变量的对数服从正态分布的情况，例如财富分布或收入分布。
+<br>负二项分布 (Negative Binomial Distribution)：描述在一系列独立的伯努利试验中，达到指定数量的成功之前的失败次数。
+<br>威布尔分布 (Weibull Distribution)：常用于可靠性工程和寿命分析，描述随机事件的生存时间。<br>
+
+<br>这些分布覆盖了数据科学中许多常见的场景，从描述连续变量到描述离散变量，以及描述等待时间和间隔时间等各种情况。]]></description><link>术语\数据科学家-95-时间都在使用的-10-大基本分布.html</link><guid isPermaLink="false">术语/数据科学家 95% 时间都在使用的 10 大基本分布.md</guid><pubDate>Thu, 20 Jun 2024 12:25:33 GMT</pubDate><enclosure url="https://picturerealm.oss-cn-chengdu.aliyuncs.com/obsidian/20240517091725.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://picturerealm.oss-cn-chengdu.aliyuncs.com/obsidian/20240517091725.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[<a data-href="平均成对核苷酸差异数（π值）" href="术语/平均成对核苷酸差异数（π值）.html" class="internal-link" target="_self" rel="noopener nofollow">平均成对核苷酸差异数（π值）</a>]]></title><description><![CDATA[ 
+ <br><br>定义：指的是任意两条序列之间的平均核苷酸差异数。<br>
+公式：<br>其中， 是样本数， 是第 i 对序列之间的差异数。<br>
+意义：核苷酸多样性反映了一个种群的遗传多样性水平，数值越大说明种群内的基因变异越多。<br>除此之外，还可以计算 <a data-href="python：计算群体单倍群单倍型多样性" href="软件\python\数据科学与格式转换\python：计算群体单倍群单倍型多样性.html" class="internal-link" target="_self" rel="noopener nofollow">python：计算群体单倍群单倍型多样性</a>。<br><br>定义：基于分子多态性的种群遗传多样性估计。<br>
+公式：<br>
+其中，S是多态性位点的数目， 是一个与样本大小有关的常数。<br>
+意义：OS 用于估计一个种群中的突变率，通常用于比较不同种群的遗传多样性<br><br>定义：反映了数据的离散程度。<br>
+公式：<br>
+其中， 是数据中的每个值， 是平均值，N 是数据点数目。<br>
+意义：标准差用于表示遗传多样性参数的变异程度，数值越大，表示变异越大。<br><br><a data-href="python：计算群体单倍群单倍型多样性" href="软件\python\数据科学与格式转换\python：计算群体单倍群单倍型多样性.html" class="internal-link" target="_self" rel="noopener nofollow">python：计算群体单倍群单倍型多样性</a>。<br>我们使用以下公式来计算单倍型/单倍群的法医学参数。单倍型/单倍群多样性(Haplotype/haplogroup diversity, HD)是基于 Nei 和 Tajima 提出来的公式进行计算：<br>
+其中 n 表示观察到单倍型/单倍群的数量，pi 表示第 i 个单倍型/单倍群的频率。分辨能力(Discrimination capacity,DC)使用观察的单倍型/单倍群数量和所有单倍型/单倍群数量的比值。<br><br>
+<br>θS 值高：θS 是基于分离位点数量（S）的群体参数，反映了 DNA 序列中每个位点的平均突变率。较高的 θS 值表明群体中存在较多的分离位点，暗示着该群体在进化过程中积累了大量突变。这通常与古老的群体起源有关，因为需要较长的时间来积累足够的突变。但是强烈的混合也可能导致θS 升高。
+<br>π 值高：π 表示群体内两个 DNA 序列之间的平均核苷酸差异。高 π 值意味着个体之间的遗传差异较大，这可能是由于长时间的进化积累，或者不同遗传背景的群体之间发生了基因交流（杂交或混合）。这种基因交流会引入新的变异，增加群体的遗传多样性。
+<br>HD 值高：单倍型多样性（HD）表示在群体中随机选取两个单倍型不同的概率。高 HD 值意味着群体内存在丰富的单倍型，这可能是由于古老的起源使得突变积累，或者不同遗传背景的个体混合导致的多样性增加。
+<br>综合来看，当一个群体同时具有高 θS、π 和 HD 值时，说明该群体内存在大量的遗传变异。这种高水平的多样性可能源于：<br>
+<br>古老的起源：长时间的进化过程使得群体内积累了大量的突变和变异。
+<br>不同遗传背景的杂合：来自不同群体的基因交流引入了新的遗传变异，增加了群体的多样性。
+<br>通过分析 θS（θ_S）、π（pi） 和 HD（单倍型多样性） 这三个参数的数值及其相互关系，可以帮助我们区分高水平遗传多样性的具体原因，即确定多样性是源于古老的起源还是由于不同遗传背景群体的混合（基因交流）。以下是具体的方法：<br>
+<br>θS 和 π 的比较：
+
+<br>古老的起源（长期进化积累）：
+
+<br>θS 和 π 值都较高，且两者数值接近。
+<br>在稳定的中性进化条件下，θS 和 π 都是对群体突变率 θ 的无偏估计，因此在古老、稳定的群体中，这两个参数的值应当相似。
+<br>高 θS 值表示有较多的分离位点（S），高 π 值表示平均核苷酸差异较大，这都符合长期突变积累的特征。
+
+
+<br>群体混合（不同遗传背景的杂合）：
+
+<br>π 值显著高于 θS 值。
+<br>混合事件会引入来自不同群体的遗传变异，增加了个体间的核苷酸差异（π 增加），但分离位点的数量（S）增加相对有限，因此 θS 可能没有 π 增加得多。
+<br>这种情况下，θS 和 π 之间的差异会导致其他统计量（如 Tajima's D）发生变化。
+
+
+
+
+<br>Tajima's D 统计量的应用：
+
+<br>计算 Tajima's D：
+
+<br>Tajima's D 是基于 θS 和 π 之间差异的统计量，用于检测群体是否偏离中性进化。
+<br>D ≈ 0：表示群体符合中性平衡状态。
+<br>D &lt; 0：可能表示群体经历了选择压力（如净化选择）或人口扩张。
+<br>D &gt; 0：可能表示群体经历了瓶颈效应、混合或平衡选择。
+
+
+<br>解释 Tajima's D 值：
+
+<br>古老的起源：如果群体在长期内保持稳定且没有经历人口波动或选择压力，Tajima's D 值应接近零。
+<br>群体混合：混合会导致 π 增加，但 θS 增加较少，导致 Tajima's D 值为正，提示存在群体混合或瓶颈效应。
+
+
+
+
+<br>HD（单倍型多样性）的作用：
+
+<br>高 HD 值的解释：
+
+<br>古老的起源：长时间的突变积累会产生大量独特的单倍型，导致 HD 值高。
+<br>群体混合：不同群体的单倍型混合增加了单倍型的数量和多样性，也会使 HD 值升高。
+
+
+<br>结合其他参数：
+
+<br>如果 HD 值高且与高 θS 和 π 值一致，可能支持古老的起源。
+<br>如果 HD 值高，但 θS 相对较低而 π 值较高，可能提示群体混合。
+
+
+
+
+<br>单倍型网络和谱系分析：
+
+<br>古老的起源：
+
+<br>单倍型网络可能呈现星状结构，中心单倍型通过少数突变连接到其他单倍型，反映长期的稳定积累。
+
+
+<br>群体混合：
+
+<br>网络可能显示明显的群体分化结构，不同群体的单倍型通过较长的枝干连接，提示历史上的混合事件。
+
+
+
+
+<br>地理分布和历史背景的结合：
+
+<br>古老的起源：
+
+<br>高多样性群体可能集中在被认为是物种起源或长期存在的地区。
+
+
+<br>群体混合：
+
+<br>多样性高的群体可能位于历史上迁移、贸易频繁的地区，支持混合的可能性。
+
+
+
+
+<br>其他统计分析：<br>
+- _Fu 和 Li's D 和 F_ 检验：这些统计量也可以用于检测偏离中性进化的情况，辅助判断多样性来源。<br>
+- Mismatch Distribution（错配分布）：可以用于检测群体扩张或收缩历史。<br>
+总结**：
+<br>
+<br>古老的起源特征：
+
+<br>θS 和 π 值都高，且相近。
+<br>Tajima's D 值接近零。
+<br>HD 值高，单倍型网络呈星状。
+<br>地理分布与物种起源地一致。
+
+
+<br>群体混合特征：
+
+<br>π 值高于 θS 值，差异显著。
+<br>Tajima's D 值为正。
+<br>HD 值高，单倍型网络显示复杂的连接模式。
+<br>位于历史上已知的迁移或贸易路线附近。
+
+
+<br><br>Theta(Hom) 参数是一个用来描述种群内部同质性（homozygosity）的指标。同质性是指在某个位点上，一个种群中个体有相同等位基因的比例。Theta(Hom) 常用于种群遗传学研究中，以估计种群内的遗传多样性和结构。它基于 Wright-Fisher 理想种群模型，考虑基因漂变和突变平衡的情况。<br><br><br>
+<br>高  值：表示种群内部有较高的同质性，即种群中的个体在某一基因位点上具有相同等位基因的可能性较高。这通常表明种群较小，基因漂变的影响较大，或者突变率较低。
+<br>低 值：表示种群内部同质性较低，即个体在某一基因位点上具有不同等位基因的可能性较高。这通常反映出种群较大，基因漂变的影响较小，或者突变率较高。
+<br><br>主要用于估计在无限等位基因模型（每个新突变产生一个全新的等位基因）下，一个随机抽样的群体中预期观察到的不同等位基因的数量。该参数有助于理解种群内的遗传多样性，特别是在考虑突变率和样本大小的影响下。<br><br>
+<br>高值：表明样本中观测到的等位基因数量较多，这通常意味着较高的突变率或者种群大小较大。这反映了种群中的高遗传多样性。
+<br>低值：表明样本中观测到的等位基因数量较少，可能是由于较低的突变率或较小的种群大小，这反映了较低的遗传多样性。
+<br><br><br><br><br>
+<br>
+<br>Zouros (1979) Zouros, E., 1979 Mutation rates, population sizes and amounts of electrophoretic  variation of enzyme loci in natural populations. Genetics 92: 623-646.<a href="about:blank#fnref-1-bc7ad54c46cf993c" class="footnote-backref footnote-link" target="_self" rel="noopener nofollow"><span></span>︎</a><img class="emoji" draggable="false" alt="↩" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/21a9.svg" height="18px" style="max-width: 100%;">
+<br>Weiss (1991) Chakraborty, R., and K. M. Weiss, 1991 Genetic variation of the mitochondrial DNA  genome in American Indians is at mutation-drift equilibrium. Am. J. Hum. Genet.  86: 497-506.<a href="about:blank#fnref-2-bc7ad54c46cf993c" class="footnote-backref footnote-link" target="_self" rel="noopener nofollow"><span></span>︎</a><img class="emoji" draggable="false" alt="↩" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/21a9.svg" height="18px" style="max-width: 100%;">
+<br>Ewens, 1972 Ewens, W.J. 1972 The sampling theory of selectively neutral alleles. Theor. Popul. Biol.  3:87-112.<a href="about:blank#fnref-3-bc7ad54c46cf993c" class="footnote-backref footnote-link" target="_self" rel="noopener nofollow"><span></span>︎</a><img class="emoji" draggable="false" alt="↩" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/21a9.svg" height="18px" style="max-width: 100%;">
+]]></description><link>术语\序列多态性分析（sequence-polymorphism-analysis）.html</link><guid isPermaLink="false">术语/序列多态性分析（Sequence Polymorphism Analysis）.md</guid><pubDate>Tue, 05 Nov 2024 12:17:09 GMT</pubDate><enclosure url="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/21a9.svg" length="0" type="image/svg+xml"/><content:encoded>&lt;figure&gt;&lt;img src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/21a9.svg"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[准备文件]]></title><description><![CDATA[ 
  <br><a data-href="Arlequin软件" href="软件\其它生信软件\a-j\arlequin软件.html" class="internal-link" target="_self" rel="noopener nofollow">Arlequin软件</a> 可以完成许多群体遗传方面的计算，但是有时候，在大规模的数据计算中，该程序的 win 版本可能无法发挥足够的性能。一个办法是使用它的 Linux 版本。<br>本文将介绍如何在 Linux 版本下使用该软件。<br><br>
 <br>首先下载该软件的 Linux 版本：<a data-tooltip-position="top" aria-label="https://vip.123pan.cn/1835545223/%E6%96%87%E6%A1%A3%EF%BC%88%E5%85%B1%E4%BA%AB%EF%BC%89/arlecore_linux.zip" rel="noopener nofollow" class="external-link" href="https://vip.123pan.cn/1835545223/%E6%96%87%E6%A1%A3%EF%BC%88%E5%85%B1%E4%BA%AB%EF%BC%89/arlecore_linux.zip" target="_blank">点击此处下载备份</a>
 <br>然后下载该软件的 win 版本：<a data-tooltip-position="top" aria-label="https://vip.123pan.cn/1835545223/%E6%96%87%E6%A1%A3%EF%BC%88%E5%85%B1%E4%BA%AB%EF%BC%89/WinArl35.zip" rel="noopener nofollow" class="external-link" href="https://vip.123pan.cn/1835545223/%E6%96%87%E6%A1%A3%EF%BC%88%E5%85%B1%E4%BA%AB%EF%BC%89/WinArl35.zip" target="_blank">点击此处下载备份</a>
@@ -168,40 +331,7 @@ echo "Batch processing completed for all files in $inputDir"
 -sident                     为输入对齐中所有序列打印身份分数矩阵。（见用户指南）
 -soverlap                   为输入对齐中所有序列打印重叠分数矩阵。（见用户指南）
 
-复制]]></description><link>软件\其它生信软件\t-z\trimal：自动修剪序列不可靠区域.html</link><guid isPermaLink="false">软件/其它生信软件/T-Z/Trimal：自动修剪序列不可靠区域.md</guid><pubDate>Tue, 05 Nov 2024 03:14:14 GMT</pubDate></item><item><title><![CDATA[1 .&nbsp;<a data-href="正态分布 (Normal Distribution)" href="正态分布 (Normal Distribution)" class="internal-link" target="_self" rel="noopener nofollow">正态分布 (Normal Distribution)</a>]]></title><description><![CDATA[ 
- <br><br>正态分布在我们的生活中随处可见，我们身高的分布、体重的分布，甚至是考试成绩的分布都可能符合正态分布。它的形状就像一个钟形曲线，最高点在中间，两边逐渐低下，具有对称性。<br>
-<img alt="image.png" src="https://picturerealm.oss-cn-chengdu.aliyuncs.com/obsidian/20240517091725.png" referrerpolicy="no-referrer" style="width: 500px; max-width: 100%;"><br><br>伯努利分布又名两点分布或者0-1分布，是描述只有两种可能结果的随机试验的概率分布，比如抛硬币或投掷骰子。它将这两种结果分别表示为1和0，通常用 p 来表示事件的成功概率，而1-p 表示事件的失败概率。比如，你在玩一个抛硬币的游戏。硬币只有两面：正面和反面。当你抛硬币时，只有两种可能的结果：硬币出现正面或反面。伯努利分布就像是描述硬币落地后是正面还是反面的概率分布。在伯努利分布中，我们关心的是事件的成功概率，即出现期望结果的概率。比如，在抛硬币时，成功的概率就是硬币出现正面的概率。<br>伯努利分布的变异程度通常由成功和失败的概率决定。如果硬币是公平的，那么成功和失败的概率都是相等的，变异程度就较小。假设你在玩一个猜硬币正反面的游戏，如果你猜对了，你就赢得奖品。这种情况下，游戏的结果可以用伯努利分布来描述。<br>
-<img alt="image.png" src="https://picturerealm.oss-cn-chengdu.aliyuncs.com/obsidian/20240517091815.png" referrerpolicy="no-referrer" style="width: 500px; max-width: 100%;"><br><br>泊松分布常常用于描述单位时间或空间内事件发生的次数，比如在一小时内接到的电话数量、一天内发生的交通事故数量等。<br>它的形状看起来有点像钟形曲线，但是更加扁平。在图的中心，事件发生的次数最多，然后随着次数的增加，概率逐渐减小。<br>平均值告诉我们在单位时间或空间内预期事件的平均发生次数。<br>
-泊松分布的特点之一是，它的方差等于其平均值。这意味着，如果事件在某段时间内平均发生了5次，那么方差也是5，表明事件发生次数的变化程度与平均值相近。如果我们想知道某一条街道一天内发生的车祸数量的概率分布，我们可以使用泊松分布来预测不同数量的车祸发生的可能性。<br>
-<img alt="image.png" src="https://picturerealm.oss-cn-chengdu.aliyuncs.com/obsidian/20240517092140.png" referrerpolicy="no-referrer" style="width: 500px; max-width: 100%;"><br><br>指数分布通常用于描述等待时间或事件之间的间隔时间，比如等待下一辆公交车到达的时间、两次地震之间的时间间隔等。<br>它的形状看起来有点像波峰逐渐减小的山脉。在开始时，概率较高，随着时间的推移，概率逐渐减小。<br>
-<img alt="image.png" src="https://picturerealm.oss-cn-chengdu.aliyuncs.com/obsidian/20240517092030.png" referrerpolicy="no-referrer" style="width: 500px; max-width: 100%;"><br>
-指数分布的一个重要特点是，它是无记忆的。这意味着，在任何给定的时间点上，等待下一个事件的时间不受过去等待时间的影响。<br>平均值告诉我们在一段时间内预期发生事件的平均次数。而指数分布的方差等于平均值的平方，这意味着方差与平均值之间存在很大的差异。<br>如果我们想知道一个人等待下一次公交车到达的时间，我们可以使用指数分布来预测不同等待时间的概率分布。<br><br>伽玛分布通常用于描述连续随机变量的正数值，比如处理时间、等待时间或事件发生的时间间隔等。<br>它的形状可以是多样的，取决于伽玛分布的参数。但通常情况下，它呈现出右偏的形态，即尾部向右延伸。伽玛分布的平均值和方差都受到其参数的影响。当其中一个参数增大时，分布会更向右延伸，并且平均值和方差也会随之增大。<br>这个分布可以用于建模很多现实生活中的情况，比如处理时间、等待时间以及一些事件的发生间隔时间等。<br>如果我们想要预测一个机器的寿命，我们可以使用伽玛分布来描述机器的故障时间分布。<br>
-<img alt="image.png" src="https://picturerealm.oss-cn-chengdu.aliyuncs.com/obsidian/20240517092124.png" referrerpolicy="no-referrer" style="width: 500px; max-width: 100%;"><br><br>贝塔分布是一种连续概率分布，通常用于描述在一个有限区间内取值的随机变量，比如概率值或者比例。<br>它的形状可以是多样的，取决于贝塔分布的参数。但通常情况下，它呈现出 U 型或者反 U 型的形态。<br>
-<img alt="image.png" src="https://picturerealm.oss-cn-chengdu.aliyuncs.com/obsidian/20240517092207.png" referrerpolicy="no-referrer" style="width: 500px; max-width: 100%;"><br>
-贝塔分布的一个重要特点是，它可以用来描述一个随机变量的概率分布，并且在一些统计推断和贝叶斯分析中有重要的应用。<br>如果我们想要建立一个模型来描述一个产品的质量，我们可以使用贝塔分布来描述产品合格的比例。<br><br>均匀分布是一种简单的概率分布，它将所有可能的结果都分布在一个范围内，并且每个结果的概率都是相等的。<br>
-想想想想一下，把一个区间分成若干个等长的小区间，每个小区间内的概率都是相同的，这就是均匀分布。<br>
-它的形状就像是一个长方形，所有的小区间的高度都是一样的，表明每个结果出现的概率都是相等的。<br>
-均匀分布的参数是区间的上下界，它们决定了分布的范围。<br>
-如果我们想要模拟一个骰子的投掷结果，我们可以使用均匀分布，因为在一个公正的骰子中，每个面出现的概率都是相等的。<br>
-<img alt="image.png" src="https://picturerealm.oss-cn-chengdu.aliyuncs.com/obsidian/20240517092250.png" referrerpolicy="no-referrer" style="width: 500px; max-width: 100%;"><br><br>二项分布在我们的日常生活中也很常见，比如抛硬币的结果、投掷骰子的结果或者考试中答对题目的次数等。<br>二项分布描述了在一系列独立的伯努利试验中成功次数的分布。这些试验只有两种可能的结果，比如抛硬币可能是正面或反面。<br>这个分布的形状不像钟形曲线那样，它更像是一个条形图。在图的两端，成功次数较少，而在中间，成功次数最多。<br>
-平均值告诉我们在这些试验中预期成功的次数，而标准差则告诉我们成功次数的变化程度。<br>假设我们进行了10次抛硬币的试验，我们想知道有多少次是正面。二项分布可以告诉我们每种可能的正面次数的概率。<br>
-<img alt="image.png" src="https://picturerealm.oss-cn-chengdu.aliyuncs.com/obsidian/20240517092331.png" referrerpolicy="no-referrer" style="width: 500px; max-width: 100%;"><br><br>对数正态分布描述了一个随机变量的对数服从正态分布的情况。换句话说，如果一个随机变量的对数是正态分布的，那么该随机变量就服从对数正态分布。<br>它的形状看起来有点像正态分布，但是更加右偏。这是因为正态分布的对数在较大的值处增长得更快。<br>
-<img alt="image.png" src="https://picturerealm.oss-cn-chengdu.aliyuncs.com/obsidian/20240517092352.png" referrerpolicy="no-referrer" style="width: 500px; max-width: 100%;"><br>
-对数正态分布通常用于描述一些连续的正数值的分布，比如收入分布、财富分布等。<br>它的参数是正态分布的平均值和标准差，它们决定了对数正态分布的形状。<br>如果我们想要描述一个城市中居民的收入分布，我们可能会发现它符合对数正态分布。<br><br>负二项分布描述了在一系列独立的伯努利试验中，达到指定数量的成功之前的失败次数。<br>与几何分布不同，几何分布是在达到第一次成功时停止，而负二项分布则在达到指定数量的成功时停止。<br>它的形状类似于二项分布，但更为右偏。开始时概率较高，随着试验次数的增加，概率逐渐减小。<br>
-<img alt="image.png" src="https://picturerealm.oss-cn-chengdu.aliyuncs.com/obsidian/20240517092426.png" referrerpolicy="no-referrer" style="width: 500px; max-width: 100%;"><br>
-负二项分布的参数是成功的概率和达到指定数量的成功所需的试验次数。成功的概率越高，试验次数越少，分布越向左偏。<br>如果我们重复进行投掷硬币的试验，直到出现5次正面为止，负二项分布可以告诉我们达到5次正面所需的失败次数的概率分布情况。<br>数据科学家在日常工作中使用的一些基本概率分布包括以下 11 个：<br>
-<br>正态分布 (Normal Distribution)：在数据科学中应用广泛，特别是在统计推断和假设检验中。
-<br>泊松分布 (Poisson Distribution)：用于描述单位时间或空间内事件发生的次数的分布，如某个时间段内电话呼叫的数量。
-<br>指数分布 (Exponential Distribution)：描述等待时间或事件之间的间隔时间的分布，例如等待下一次地铁到达的时间。
-<br>伽玛分布 (Gamma Distribution)：在描述连续随机变量的正数值时非常有用，例如在描述等待时间或处理时间时。
-<br>贝塔分布 (Beta Distribution)：通常用于描述概率分布的先验知识，例如在贝叶斯推断中。
-<br>均匀分布 (Uniform Distribution)：用于描述所有可能结果等概率出现的情况，例如抛硬币、掷骰子等。
-<br>二项分布 (Binomial Distribution)：用于描述离散随机变量中成功次数的分布，例如抛硬币、投掷骰子等。
-<br>对数正态分布 (Log-Normal Distribution)：描述一个随机变量的对数服从正态分布的情况，例如财富分布或收入分布。
-<br>负二项分布 (Negative Binomial Distribution)：描述在一系列独立的伯努利试验中，达到指定数量的成功之前的失败次数。
-<br>威布尔分布 (Weibull Distribution)：常用于可靠性工程和寿命分析，描述随机事件的生存时间。<br>
-
-<br>这些分布覆盖了数据科学中许多常见的场景，从描述连续变量到描述离散变量，以及描述等待时间和间隔时间等各种情况。]]></description><link>术语\数据科学家-95-时间都在使用的-10-大基本分布.html</link><guid isPermaLink="false">术语/数据科学家 95% 时间都在使用的 10 大基本分布.md</guid><pubDate>Thu, 20 Jun 2024 12:25:33 GMT</pubDate><enclosure url="https://picturerealm.oss-cn-chengdu.aliyuncs.com/obsidian/20240517091725.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://picturerealm.oss-cn-chengdu.aliyuncs.com/obsidian/20240517091725.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[种群配对Fst值（Population pairwise Fst values）]]></title><description><![CDATA[ 
+复制]]></description><link>软件\其它生信软件\t-z\trimal：自动修剪序列不可靠区域.html</link><guid isPermaLink="false">软件/其它生信软件/T-Z/Trimal：自动修剪序列不可靠区域.md</guid><pubDate>Tue, 05 Nov 2024 03:14:14 GMT</pubDate></item><item><title><![CDATA[种群配对Fst值（Population pairwise Fst values）]]></title><description><![CDATA[ 
  <br>Fst（Fixation index）是一个衡量种群间遗传差异的指标。<br>
 它基于遗传变异的分布，通过比较种群内和种群间的遗传差异来度量种群结构。Fst值的范围从0到1，表示种群间遗传差异的程度。值接近0表示种群之间的遗传差异较小，可能存在较高的基因流和遗传交流。而值接近1表示种群之间的遗传差异较大，可能存在较低的基因流和遗传交流。<br>Population pairwise Fst values则是一种计算不同种群之间Fst值的方法。它通过对每对种群之间的遗传差异进行比较，计算出每对种群之间的Fst值。这种方法可以帮助确定不同种群之间的遗传结构差异程度，提供了评估种群间遗传流动和种群分化的信息。<br>计算population pairwise Fst values通常涉及使用遗传标记数据，如DNA序列或分子标记，例如单核苷酸多态性（SNP）或微卫星标记。这些数据用于计算不同种群间的遗传距离或遗传差异指标，从而获得Fst值。<br>Population pairwise Fst values的应用广泛，特别在种群遗传学、进化生物学、生态学和人类遗传学等领域。它可以用于研究种群分化、种群结构、种群历史和基因流等重要的生物学过程。<br>遗传距离（FST）热图是一种图形表示，用于展示不同人群之间的遗传差异程度，其基于FST（固定指数）值进行计算。FST是一种衡量人群遗传结构的指标，表示人群之间的遗传差异程度，它 quantifies 衡量了遗传变异中由人群间差异引起的比例，而非人群内部的变异。<br>热图使用颜色标尺来表示不同人群之间的FST值。通常情况下，较高的FST值会用较深的颜色（例如红色）表示，表示较高的遗传分化程度，而较低的FST值会用较浅的颜色（例如蓝色）表示，表示较低的遗传分化程度。热图可以帮助研究人员可视化人群之间的遗传相似性和差异性模式，有助于识别群集、人群亚组或基因流模式。<br>遗传距离热图在人群遗传学和进化研究中是一个有用的工具，它提供了遗传关系和人群结构的视觉表达方式，可以推断历史迁移模式、遗传混合和人群历史。<br>较低的FST值表示较低的遗传分化程度，意味着不同人群之间的遗传差异较小，亲缘关系较近。较低的FST值通常与更密切的遗传联系和更高的基因流程相关，表明不同人群之间有较频繁的基因交流和互相迁徙。因此，在遗传学中，较低的FST值常常被解释为人群之间的亲缘关系更为密切。相反，较高的FST值表示较高的遗传分化程度，意味着不同人群之间的遗传差异较大，亲缘关系较远。较高的FST值通常与较少的基因流程和较少的遗传交流相关，表明不同人群之间的遗传隔离和相对独立性。因此，遗传距离（FST）的值可以提供一种评估不同人群之间亲缘关系的度量方式。<br><br>我们使用了<a data-href="Arlequin软件" href="软件\其它生信软件\a-j\arlequin软件.html" class="internal-link" target="_self" rel="noopener nofollow">Arlequin软件</a> 来计算<a data-href="种群配对Fst值（Population pairwise Fst values）" href="术语\种群配对fst值（population-pairwise-fst-values）.html" class="internal-link" target="_self" rel="noopener nofollow">种群配对Fst值（Population pairwise Fst values）</a>。<br>前面文章写到群体遗传学主要致力于解决两个问题：1. 推断群体历史；2. 检测自然选择。今天这篇文章就来讲一下检测自然选择最基础也是最常用的一种方法：群体分化指数--Fst<br>
 简单介绍F-statistics 和 Fst<br>
@@ -2117,126 +2247,7 @@ R. B. Alley,&nbsp;The Two-Mile Time Machine: Ice Cores, Abrupt Climate Change, a
 <br>有了农业，谁还游牧。
 <br>之后内乱，被后夏取代，短命的胡夏，之后没什么动静了。
 <br>不到百年，就没有<a data-href="匈奴" href="术语\匈奴.html" class="internal-link" target="_self" rel="noopener nofollow">匈奴</a>了。
-]]></description><link>术语\匈奴.html</link><guid isPermaLink="false">术语/匈奴.md</guid><pubDate>Thu, 20 Jun 2024 12:27:01 GMT</pubDate></item><item><title><![CDATA[<a data-href="平均成对核苷酸差异数（π值）" href="术语/平均成对核苷酸差异数（π值）.html" class="internal-link" target="_self" rel="noopener nofollow">平均成对核苷酸差异数（π值）</a>]]></title><description><![CDATA[ 
- <br><br>定义：指的是任意两条序列之间的平均核苷酸差异数。<br>
-公式：<br>其中， 是样本数， 是第 i 对序列之间的差异数。<br>
-意义：核苷酸多样性反映了一个种群的遗传多样性水平，数值越大说明种群内的基因变异越多。<br>除此之外，还可以计算 <a data-href="python：计算群体单倍群单倍型多样性" href="软件\python\数据科学与格式转换\python：计算群体单倍群单倍型多样性.html" class="internal-link" target="_self" rel="noopener nofollow">python：计算群体单倍群单倍型多样性</a>。<br><br>定义：基于分子多态性的种群遗传多样性估计。<br>
-公式：<br>
-其中，S是多态性位点的数目， 是一个与样本大小有关的常数。<br>
-意义：OS 用于估计一个种群中的突变率，通常用于比较不同种群的遗传多样性<br><br>定义：反映了数据的离散程度。<br>
-公式：<br>
-其中， 是数据中的每个值， 是平均值，N 是数据点数目。<br>
-意义：标准差用于表示遗传多样性参数的变异程度，数值越大，表示变异越大。<br><br><a data-href="python：计算群体单倍群单倍型多样性" href="软件\python\数据科学与格式转换\python：计算群体单倍群单倍型多样性.html" class="internal-link" target="_self" rel="noopener nofollow">python：计算群体单倍群单倍型多样性</a>。<br>我们使用以下公式来计算单倍型/单倍群的法医学参数。单倍型/单倍群多样性(Haplotype/haplogroup diversity, HD)是基于 Nei 和 Tajima 提出来的公式进行计算：<br>
-其中 n 表示观察到单倍型/单倍群的数量，pi 表示第 i 个单倍型/单倍群的频率。分辨能力(Discrimination capacity,DC)使用观察的单倍型/单倍群数量和所有单倍型/单倍群数量的比值。<br><br>
-<br>θS 值高：θS 是基于分离位点数量（S）的群体参数，反映了 DNA 序列中每个位点的平均突变率。较高的 θS 值表明群体中存在较多的分离位点，暗示着该群体在进化过程中积累了大量突变。这通常与古老的群体起源有关，因为需要较长的时间来积累足够的突变。但是强烈的混合也可能导致θS 升高。
-<br>π 值高：π 表示群体内两个 DNA 序列之间的平均核苷酸差异。高 π 值意味着个体之间的遗传差异较大，这可能是由于长时间的进化积累，或者不同遗传背景的群体之间发生了基因交流（杂交或混合）。这种基因交流会引入新的变异，增加群体的遗传多样性。
-<br>HD 值高：单倍型多样性（HD）表示在群体中随机选取两个单倍型不同的概率。高 HD 值意味着群体内存在丰富的单倍型，这可能是由于古老的起源使得突变积累，或者不同遗传背景的个体混合导致的多样性增加。
-<br>综合来看，当一个群体同时具有高 θS、π 和 HD 值时，说明该群体内存在大量的遗传变异。这种高水平的多样性可能源于：<br>
-<br>古老的起源：长时间的进化过程使得群体内积累了大量的突变和变异。
-<br>不同遗传背景的杂合：来自不同群体的基因交流引入了新的遗传变异，增加了群体的多样性。
-<br>通过分析 θS（θ_S）、π（pi） 和 HD（单倍型多样性） 这三个参数的数值及其相互关系，可以帮助我们区分高水平遗传多样性的具体原因，即确定多样性是源于古老的起源还是由于不同遗传背景群体的混合（基因交流）。以下是具体的方法：<br>
-<br>θS 和 π 的比较：
-
-<br>古老的起源（长期进化积累）：
-
-<br>θS 和 π 值都较高，且两者数值接近。
-<br>在稳定的中性进化条件下，θS 和 π 都是对群体突变率 θ 的无偏估计，因此在古老、稳定的群体中，这两个参数的值应当相似。
-<br>高 θS 值表示有较多的分离位点（S），高 π 值表示平均核苷酸差异较大，这都符合长期突变积累的特征。
-
-
-<br>群体混合（不同遗传背景的杂合）：
-
-<br>π 值显著高于 θS 值。
-<br>混合事件会引入来自不同群体的遗传变异，增加了个体间的核苷酸差异（π 增加），但分离位点的数量（S）增加相对有限，因此 θS 可能没有 π 增加得多。
-<br>这种情况下，θS 和 π 之间的差异会导致其他统计量（如 Tajima's D）发生变化。
-
-
-
-
-<br>Tajima's D 统计量的应用：
-
-<br>计算 Tajima's D：
-
-<br>Tajima's D 是基于 θS 和 π 之间差异的统计量，用于检测群体是否偏离中性进化。
-<br>D ≈ 0：表示群体符合中性平衡状态。
-<br>D &lt; 0：可能表示群体经历了选择压力（如净化选择）或人口扩张。
-<br>D &gt; 0：可能表示群体经历了瓶颈效应、混合或平衡选择。
-
-
-<br>解释 Tajima's D 值：
-
-<br>古老的起源：如果群体在长期内保持稳定且没有经历人口波动或选择压力，Tajima's D 值应接近零。
-<br>群体混合：混合会导致 π 增加，但 θS 增加较少，导致 Tajima's D 值为正，提示存在群体混合或瓶颈效应。
-
-
-
-
-<br>HD（单倍型多样性）的作用：
-
-<br>高 HD 值的解释：
-
-<br>古老的起源：长时间的突变积累会产生大量独特的单倍型，导致 HD 值高。
-<br>群体混合：不同群体的单倍型混合增加了单倍型的数量和多样性，也会使 HD 值升高。
-
-
-<br>结合其他参数：
-
-<br>如果 HD 值高且与高 θS 和 π 值一致，可能支持古老的起源。
-<br>如果 HD 值高，但 θS 相对较低而 π 值较高，可能提示群体混合。
-
-
-
-
-<br>单倍型网络和谱系分析：
-
-<br>古老的起源：
-
-<br>单倍型网络可能呈现星状结构，中心单倍型通过少数突变连接到其他单倍型，反映长期的稳定积累。
-
-
-<br>群体混合：
-
-<br>网络可能显示明显的群体分化结构，不同群体的单倍型通过较长的枝干连接，提示历史上的混合事件。
-
-
-
-
-<br>地理分布和历史背景的结合：
-
-<br>古老的起源：
-
-<br>高多样性群体可能集中在被认为是物种起源或长期存在的地区。
-
-
-<br>群体混合：
-
-<br>多样性高的群体可能位于历史上迁移、贸易频繁的地区，支持混合的可能性。
-
-
-
-
-<br>其他统计分析：<br>
-- _Fu 和 Li's D 和 F_ 检验：这些统计量也可以用于检测偏离中性进化的情况，辅助判断多样性来源。<br>
-- Mismatch Distribution（错配分布）：可以用于检测群体扩张或收缩历史。<br>
-总结**：
-<br>
-<br>古老的起源特征：
-
-<br>θS 和 π 值都高，且相近。
-<br>Tajima's D 值接近零。
-<br>HD 值高，单倍型网络呈星状。
-<br>地理分布与物种起源地一致。
-
-
-<br>群体混合特征：
-
-<br>π 值高于 θS 值，差异显著。
-<br>Tajima's D 值为正。
-<br>HD 值高，单倍型网络显示复杂的连接模式。
-<br>位于历史上已知的迁移或贸易路线附近。
-
-
-]]></description><link>术语\序列多态性分析（sequence-polymorphism-analysis）.html</link><guid isPermaLink="false">术语/序列多态性分析（Sequence Polymorphism Analysis）.md</guid><pubDate>Mon, 28 Oct 2024 13:22:43 GMT</pubDate></item><item><title><![CDATA[序列质量分数]]></title><description><![CDATA[ 
+]]></description><link>术语\匈奴.html</link><guid isPermaLink="false">术语/匈奴.md</guid><pubDate>Thu, 20 Jun 2024 12:27:01 GMT</pubDate></item><item><title><![CDATA[序列质量分数]]></title><description><![CDATA[ 
  <br>序列质量分数通常是通过测序过程中各个碱基被正确识别的置信度来计算的，这个置信度常常以 Phred 质量分数（Q）来表示。Phred 质量分数是一个广泛使用的测序质量评估标准，其计算公式如下：<br><br>P 是一个碱基被错误识别的概率。例如，如果一个碱基被识别错误的概率是1%，那么其 Phred 质量分数为 20:<br><br>
 <br>Q30表示错误概率为1/1000，即正确率为99.9%，这通常被认为是高质量的测序数据。
 <br>Q20对应于错误概率为1/100，即正确率为99%，这被认为是可接受的质量水平。
